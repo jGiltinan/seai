@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><div id="footer">17-445 Software Engineering for AI-Enabled Systems, Christian Kaestner</div><section  data-markdown><script type="text/template">  
+      <div class="slides"><div id="footer">17-445 Software Engineering for AI-Enabled Systems, Christian Kaestner</div><section  data-markdown><script type="text/template">
 
 # Software Engineering Bootcamp
 
@@ -44,7 +44,6 @@ Christian Kaestner
     - E-commerce websites?
     - Product recommendation? Voice recognition?
     - Routine gets automated -> innovation cycle
-
 </script></section><section data-markdown><script type="text/template">
 ## A Simple Process
 
@@ -62,7 +61,7 @@ Christian Kaestner
 
 Examples?
 
-![discussion](discussion.png)
+<!-- discussion -->
 
 <aside class="notes"><p>Writing down all requirements
 Require approval for all changes to requirements
@@ -86,7 +85,7 @@ Use Docker containers to push code between developers and operation</p>
 </aside></script></section><section data-markdown><script type="text/template">
 ## Example of Process Problems?
 
-![discussion](discussion.png)
+<!-- discussion -->
 
 <aside class="notes"><p>Collect examples of what could go wrong:</p>
 <p>Change Control: Mid-project informal agreement to changes suggested by customer or manager. Project scope expands 25-50%
@@ -98,7 +97,7 @@ Scheduling: When project is behind, developers are asked weekly for new estimate
 </aside></script></section><section data-markdown><script type="text/template">
 ## Example of Process Problems for AI-Enabled Systems?
 
-![discussion](discussion.png)
+<!-- discussion -->
 </script></section><section data-markdown><script type="text/template">## Survival Mode
 
 * Missed deadlines -> "solo development mode" to meet own deadlines
@@ -141,7 +140,7 @@ Manual issue tracking ▶ Issue tracking systems ▶ Bots and AI
 </script></section><section data-markdown><script type="text/template">
 ## Abstraction & Automation when Building AI-Enabled Systems?
 
-![discussion](discussion.png)
+<!-- discussion -->
 </script></section><section data-markdown><script type="text/template">## Version control
 ![revision history](revhistory.png)</script></section><section data-markdown><script type="text/template">## Version control
 
@@ -214,7 +213,6 @@ Co-Authored-By: Nicolò Ribaudo <nicolo.ribaudo@gmail.com>
     - Application and system configuration
     - e.g. Docker, Ansible, Puppet
 * Exclude generated files (.class) and secrets (passwords)
-
 </script></section><section data-markdown><script type="text/template">
 ## Managing Variants
 
@@ -248,7 +246,7 @@ Co-Authored-By: Nicolò Ribaudo <nicolo.ribaudo@gmail.com>
 </script></section><section data-markdown><script type="text/template">
 ## Versioning in AI-Enabled Systems?
 
-![discussion](discussion.png)
+<!-- discussion -->
 </script></section><section data-markdown><script type="text/template">
 ## Builds
 
@@ -291,7 +289,6 @@ public void testSanityTest(){
 ## Test Coverage
 
 ![](coverage.png)
-
 </script></section><section data-markdown><script type="text/template">
 ## Continuous Integration
 
@@ -303,12 +300,10 @@ public void testSanityTest(){
 ## Continuous Deployment
 
 ![](contdeploy.gif)
-
 </script></section><section data-markdown><script type="text/template">
 ## Build, Test, and Deployment Automation in AI-Enabled Systems?
 
-![discussion](discussion.png)
-
+<!-- discussion -->
 </script></section><section data-markdown><script type="text/template">
 ## Documentation and Naming
 
@@ -319,7 +314,6 @@ public void testSanityTest(){
 *
 * Document rationale, rather than repeating code
 * API documentation at interfaces (contracts, information hiding) 
-
 </script></section><section data-markdown><script type="text/template">
 ## Defect Tracking
 
@@ -362,8 +356,7 @@ public void testSanityTest(){
 > No other part of the conceptual work is as difficult as establishing the detailed technical requirements ... 
 > No other part of the work so cripples the resulting system if done wrong. 
 > No other part is as difficult to rectify later.     — Fred Brooks
-</script></section><section data-markdown><script type="text/template">
-## Functional Req.
+</script></section><section data-markdown><script type="text/template">## Functional Req.
 
 * What the machine should do 
     - Input 
@@ -447,7 +440,6 @@ Example:
 <!-- references -->
 
 Further reading: Victor R. Basili, Gianluigi Caldiera, H. Dieter Rombach. [The Goal Question Metric Approach](https://www.cs.umd.edu/~mvz/handouts/gqm.pdf). 1994
-
 </script></section><section data-markdown><script type="text/template">
 ## Requirements, now what?
 
@@ -462,7 +454,6 @@ Requirements >> ??? >> Code
 "needs to be extensible"
 
 "should efficiently use hardware resources"
-
 </script></section><section data-markdown><script type="text/template">
 ## Architecture and Design
 
@@ -476,11 +467,11 @@ Planning and making tradeoff decisions among alternative designs:
     - provably correct vs. quickly delivered
     - first to market vs. fully featured
 * Analysis and modeling before committing to an implementation
-    
+  
+
 -
 
 **Tradeoff analysis is in the heart of software engineering**
-
 </script></section><section data-markdown><script type="text/template">
 ## Planning
 
@@ -497,11 +488,115 @@ Planning and making tradeoff decisions among alternative designs:
 * Replan, when changes occur
     - delays, changed requirements, technical problems, ...
     - request more time/money, reassign work, renegotiate requirements, ...
+</script></section></section><section ><section data-markdown><script type="text/template"># Agile Practices in a Nutshell
+</script></section><section data-markdown><script type="text/template">
 
+## Key challenge: Change
+
+* Software seems changeable ("soft")
+* Developers prone to changes and "extra features"
+* Customers often do not understand what is easy to change and what is hard
+* "Good enough" vs. "optimal"
+</script></section><section data-markdown><script type="text/template">
+![Waterfall model](waterfall.png)
+<!-- .element: class="stretch" -->
+
+([CC-BY-SA-2.5](https://commons.wikimedia.org/wiki/File:Waterfall_model.png))
+</script></section><section data-markdown><script type="text/template">
+## Sequencing
+
+* Enforce earlier software considerations 
+
+* Modeled after traditional engineering 
+  - blueprints before construction
+  - decide what to build, build it, test it, deploy
+  - reduce change
+
+* Successful model for routine development
+
+* Problematic at large scale
+
+* Requirements -> Delays -> Surprise!
+* **Need early and frequent feedback, support for constant adaptation, prioritize risk**
+</script></section><section data-markdown><script type="text/template">
+## Iterative Processes
+
+* Interleaving and repeating
+    * Requirements engineering, Risk assessment
+    * Architecture and design
+    * Implementation
+    * Quality assurance
+    * Deployment
+
+![](spiral-model.png)
+<!-- .element: class="stretch" -->
+</script></section><section data-markdown><script type="text/template">## Agile Manifesto
+
+> Individuals and interactions **over** processes and tools
+> Working software **over** comprehensive documentation
+> Customer collaboration **over** contract negotiation
+> Responding to change **over** following a plan
+
+
+Agile: A project management approach that seeks to respond to change and unpredictability, primarily using incremental, iterative work sequences (often called “sprints”) + a collection of practices to facility that approach.
+</script></section><section data-markdown><script type="text/template">## Agile Practices
+
+Backlogs (Product and Sprint), 
+Behavior-driven development (BDD), 
+Cross-functional team, 
+Continuous integration (CI), 
+Domain-driven design (DDD), 
+Information radiators (Kanban board, Task board, Burndown chart), 
+Acceptance test-driven development (ATDD), 
+Iterative and incremental development (IID), 
+Pair programming, 
+Planning poker, 
+Refactoring, 
+Scrum meetings (Sprint planning, Daily scrum, Sprint review and retrospective), 
+Small releases, 
+Simple design, 
+Test-driven development (TDD), 
+Agile testing, 
+Timeboxing, 
+Use case, 
+User story, 
+Story-driven modeling, 
+Retrospective, 
+On-site customer, 
+Agile Modeling, 
+40-hour weeks, 
+Short development cycles, 
+Collective ownership, 
+Open workspace, 
+Velocity tracking, 
+...
+</script></section><section data-markdown><script type="text/template">
+## Select Practices
+
+* Kanban Board
+* Simple Design
+* Refactoring vs Design
+* On-site Customer
+* Short Development Cycles
+</script></section><section data-markdown><script type="text/template">
+![](kanban.jpg)
+<!-- .element: class="stretch" -->
+
+(Kanban Board)
+</script></section><section data-markdown><script type="text/template">
+## Scrum
+
+![](scrum.png)
 </script></section></section><section  data-markdown><script type="text/template">
-# Agile Practices in a Nutshell
-</script></section><section  data-markdown><script type="text/template">
 # Summary
+
+* Software engineering is all about tradeoffs
+    - Limited resources 
+    - Competing quality goals
+    - Alternative designs
+* Process is important, planning vs reacting
+* Basic practices of version control, build and test automation
+
 </script></section></div>
     </div>
 

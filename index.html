@@ -67,35 +67,199 @@
 <p>Open to undergraduate and graduate students meeting the prerequisites.</p>
 <p>Both instructors have an open door policy: If either of the instructors&#39; office doors are open and no-one else is meeting with us, we are happy to answer any course-related questions. If you prefer an appointment, email the instructors.</p>
 <h2 id="course-content">Course content</h2>
-<p>The following schedule describes the current planing status and the covered concepts. It is subject to change and will be updated as the semester progresses, especially to help focus on requested topics or support learning.</p>
-<ul>
-<li>Introduction motivation</li>
-<li>Case study discussion and problem analysis</li>
-<li>Basics of a data analytics pipeline (feature extraction etc) - End to end scenario</li>
-<li>Intelligent systems - Components and challenges (experience vs intelligence vs orchestration)</li>
-<li>Dealing with ML mistakes: Requirements and architectural tactics + Risk analysis</li>
-<li>Architecture: Planning where models live and how they get updated</li>
-<li>Understanding tradeoffs of modeling techniques: A quick survey</li>
-<li>Understanding tradeoffs of modeling techniques: A quick survey - Part 2</li>
-<li>Data quality</li>
-<li>Model quality</li>
-<li>QA automation </li>
-<li>Debugging and experimentation infrastructure, sensitivity analysis</li>
-<li>Goals and measurement; testing in production </li>
-<li>Continuous deployment, architectural considerations, infrastructure, QA automation, detecting skew</li>
-<li>Telemetry and monitoring and alerts</li>
-<li>Ethics</li>
-<li>Ethics + Fairness + Testing - Part 2</li>
-<li>Infrastructure design, testing, and reuse; modularity and infrastructure churn</li>
-<li>Scalability and distributed systems</li>
-<li>Scalability and distributed systems - Part 2</li>
-<li>Data provenance (modeling, analysis, tooling), feedback loops</li>
-<li>Reproducibility and versioning at scale</li>
-<li>Process and team reflection</li>
-<li>Technical debt</li>
-<li>Security and adversarial learning, threat modeling</li>
-<li>Planning a ML product in a startup - end to end discussion </li>
-</ul>
+<p>Course content is still under development. A more detailed breakdown of topics and learning goals can be found under <a href="https://github.com/ckaestne/seai/blob/master/learning%20goals.md">Learning Goals</a>. Below is a table of the current schedule with links to select lectures. Of of this is subject to change and will be updated as the semester progresses, especially to help focus on requested topics or support learning.</p>
+<p><a href="https://github.com/ckaestne/seai/blob/master/schedule.md">Schedule</a></p>
+<p>(Preliminary schedule, subject to change)</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Topic</th>
+<th>Reading</th>
+<th>Assignment due</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mon, Aug 26</td>
+<td><a href="https://ckaestne.github.io/seai/slides/01_introduction_and_motivation/intro.html">Introduction and Motivation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Aug 28</td>
+<td><a href="https://ckaestne.github.io/seai/slides/02_components/components.html">Components of an AI-Enabled System</a></td>
+<td><a href="https://www.buildingintelligentsystems.com/">Building Intelligent Systems</a>, Ch. 2+5+20</td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Sep 2</td>
+<td><strong>Labor day, no class</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Sep 4</td>
+<td><a href="https://ckaestne.github.io/seai/slides/03_se_bootcamp/se.md">Software Engineering Bootcamp</a></td>
+<td><!-- [Software Engineering for the 21st Century](http://ra.adm.cs.cmu.edu/anon/usr0/anon/usr/ftp/isri2005/CMU-ISRI-05-108.pdf) --></td>
+<td><a href="https://github.com/ckaestne/seai/tree/master/assignments/01_case_study/assignment01.md">I1: Case Study</a></td>
+</tr>
+<tr>
+<td>Mon, Sep 9</td>
+<td>Engineering Challenges for AI-Enabled Systems</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Sep 11</td>
+<td>Requirements and Dealing with Mistakes</td>
+<td></td>
+<td>G1: Modeling Basics</td>
+</tr>
+<tr>
+<td>Mon, Sep 16</td>
+<td>Tradeoffs among AI Techniques</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Sep 18</td>
+<td><a href="https://ckaestne.github.io/seai/slides/07_architecture/architecture.html">Software Architecture of AI-enabled Systems</a></td>
+<td><!-- [Software architecture in practice](https://www.oreilly.com/library/view/software-architecture-in/9780132942799/?ar), Ch. 1 + [Building Intelligent Systems](https://www.buildingintelligentsystems.com/), Ch. 13 --></td>
+<td>I2: Requirements/Risk</td>
+</tr>
+<tr>
+<td>Wed, Sep 23</td>
+<td><a href="https://ckaestne.github.io/seai/slides/08_model_quality/modelquality.html">Model Quality</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Sep 25</td>
+<td>Tradeoffs among AI Techniques: Presentations</td>
+<td></td>
+<td>G2: Technique Tradeoff Analysis</td>
+</tr>
+<tr>
+<td>Mon, Sep 30</td>
+<td><a href="https://ckaestne.github.io/seai/slides/09_experimentation/experimentation.html">Experimentation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Oct 2</td>
+<td>Data Quality</td>
+<td></td>
+<td>I3: Architecture</td>
+</tr>
+<tr>
+<td>Mon, Oct 7</td>
+<td>Test and Deployment Automation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Oct 9</td>
+<td><strong>Midterm</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Oct 14</td>
+<td>Ethics + Fairness</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Oct 16</td>
+<td>Ethics + Fairness</td>
+<td></td>
+<td>G3: Quality</td>
+</tr>
+<tr>
+<td>Mon, Oct 21</td>
+<td>Safety</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Oct 23</td>
+<td>Security, Adversarial Learning, and Feedback Loops</td>
+<td></td>
+<td>I4: Fairness</td>
+</tr>
+<tr>
+<td>Mon, Oct 28</td>
+<td>Scalability and Distributed Systems</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Oct 30</td>
+<td>Managing and Processing Large Datasets</td>
+<td></td>
+<td>I5: Safety/Security</td>
+</tr>
+<tr>
+<td>Mon, Nov 4</td>
+<td>Data Provenance, Reproducability, and Explainability</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Nov 6</td>
+<td>Configuration Management and Operations at Scale</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Nov 11</td>
+<td>Process and Team Reflections</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Nov 13</td>
+<td>Symbolic AI in Systems</td>
+<td></td>
+<td>G4: Test Automation</td>
+</tr>
+<tr>
+<td>Mon, Nov 18</td>
+<td>AI Engineering for Self-Driving Cars</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Nov 20</td>
+<td>Usability</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Nov 25</td>
+<td>tbd.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Nov 27</td>
+<td><strong>Thanksgiving, no class</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Dec 2</td>
+<td>Planning an AI-Enabled Product in a Startup</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Dec 4</td>
+<td>Summary and Review</td>
+<td></td>
+<td>G5: System evolution</td>
+</tr>
+</tbody></table>
 <p><img src="overview.png" alt="Course topics overview" title="Course topics overview"></p>
 <h2 id="course-syllabus-and-policies">Course Syllabus and Policies</h2>
 <p>The course uses Canvas for homework submission, grading, discussion, questions, announcements, and supplementary documents; slides will be posted here; github is used to coordinate group work.</p>

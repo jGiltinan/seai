@@ -3,8 +3,16 @@
 <html lang="en-US">
   <head>
     <meta charset='utf-8'>
+    <title>17-445 Software Engineering for AI-Enabled Systems</title>
     <style type="text/css">
-      @import url("https://fonts.googleapis.com/css?family=Chivo:900");.highlight table td{padding:5px}.highlight table pre{margin:0}.highlight,.highlight .w{color:#d0d0d0}.highlight .err{color:#151515;background-color:#ac4142}.highlight .c,.highlight .cd,.highlight .cm,.highlight .c1,.highlight .cs{color:#888}.highlight .cp{color:#f4bf75}.highlight .nt{color:#f4bf75}.highlight .o,.highlight .ow{color:#d0d0d0}.highlight .p,.highlight .pi{color:#d0d0d0}.highlight .gi{color:#90a959}.highlight .gd{color:#ac4142}.highlight .gh{color:#6a9fb5;font-weight:bold}.highlight .k,.highlight .kn,.highlight .kp,.highlight .kr,.highlight .kv{color:#aa759f}.highlight .kc{color:#d28445}.highlight .kt{color:#d28445}.highlight .kd{color:#d28445}.highlight .s,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .sh,.highlight .sx,.highlight .s1{color:#90a959}.highlight .sr{color:#75b5aa}.highlight .si{color:#8f5536}.highlight .se{color:#8f5536}.highlight .nn{color:#f4bf75}.highlight .nc{color:#f4bf75}.highlight .no{color:#f4bf75}.highlight .na{color:#6a9fb5}.highlight .m,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .il,.highlight .mo,.highlight .mb,.highlight .mx{color:#90a959}.highlight .ss{color:#90a959}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{padding:0;margin:0;font:inherit;font-size:100%;vertical-align:baseline;border:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-spacing:0;border-collapse:collapse}body{font-family:'Helvetica Neue', Helvetica, Arial, serif;font-size:1em;line-height:1.5;color:#6d6d6d;text-shadow:0 1px 0 rgba(255,255,255,0.8);background:#e7e7e7 url(../images/body-bg.png) 0 0 repeat}a{color:#d5000d}a:hover{color:#c5000c}header{padding-top:35px;padding-bottom:25px}header h1{font-family:'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;font-size:48px;font-weight:900;line-height:1.2;color:#303030;letter-spacing:-1px}header h2{font-size:24px;font-weight:normal;line-height:1.3;color:#aaa;letter-spacing:-1px}#container{min-height:595px;background:transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat}.inner{width:620px;margin:0 auto}#container .inner img{max-width:100%}#downloads{margin-bottom:40px}a.button{display:block;float:left;width:179px;padding:12px 8px 12px 8px;margin-right:14px;font-size:15px;font-weight:bold;line-height:25px;color:#303030;background:#fdfdfd;background:-moz-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #f2f2f2));background:-webkit-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);background:-o-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);background:-ms-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);background:linear-gradient(to top, #fdfdfd 0%, #f2f2f2 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f2f2f2',GradientType=0 );border-top:solid 1px #cbcbcb;border-right:solid 1px #b7b7b7;border-bottom:solid 1px #b3b3b3;border-left:solid 1px #b7b7b7;border-radius:30px;-webkit-box-shadow:10px 10px 5px #888;-moz-box-shadow:10px 10px 5px #888;box-shadow:0px 1px 5px #e8e8e8;-moz-border-radius:30px;-webkit-border-radius:30px}a.button:hover{background:#fafafa;background:-moz-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #f6f6f6));background:-webkit-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);background:-o-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);background:-ms-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);background:linear-gradient(to top, #fdfdfd 0%, #f6f6f6, 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f6f6f6',GradientType=0 );border-top:solid 1px #b7b7b7;border-right:solid 1px #b3b3b3;border-bottom:solid 1px #b3b3b3;border-left:solid 1px #b3b3b3}a.button span{display:block;height:23px;padding-left:50px}#download-zip span{background:transparent url(../images/zip-icon.png) 12px 50% no-repeat}#download-tar-gz span{background:transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat}#view-on-github span{background:transparent url(../images/octocat-icon.png) 12px 50% no-repeat}#view-on-github{margin-right:0}code,pre{margin-bottom:30px;font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;font-size:14px;color:#222}code{padding:0 3px;background-color:#f2f2f2;border:solid 1px #ddd}pre{padding:20px;overflow:auto;color:#f2f2f2;text-shadow:none;background:#303030}pre code{padding:0;color:#f2f2f2;background-color:#303030;border:none}ul,ol,dl{margin-bottom:20px}hr{height:1px;padding-bottom:1em;margin-top:1em;line-height:1px;background:transparent url("../images/hr.png") 50% 0 no-repeat;border:none}strong{font-weight:bold}em{font-style:italic}table{width:100%;border:1px solid #ebebeb}th{font-weight:500}td{font-weight:300;text-align:center;border:1px solid #ebebeb}form{padding:20px;background:#f2f2f2}h1{font-size:32px}h2{margin-bottom:8px;font-size:22px;font-weight:bold;color:#303030}h3{margin-bottom:8px;font-size:18px;font-weight:bold;color:#d5000d}h4{font-size:16px;font-weight:bold;color:#303030}h5{font-size:1em;color:#303030}h6{font-size:.8em;color:#303030}p{margin-bottom:20px;font-weight:300}a{text-decoration:none}p a{font-weight:400}blockquote{padding:0 0 0 30px;margin-bottom:20px;font-size:1.6em;border-left:10px solid #e9e9e9}ul li{list-style-position:inside;list-style:disc;padding-left:20px}ol li{list-style-position:inside;list-style:decimal;padding-left:3px}dl dt{color:#303030}footer{padding-top:20px;padding-bottom:30px;margin-top:40px;font-size:13px;color:#aaa;background:transparent url("../images/hr.png") 0 0 no-repeat}footer a{color:#666}footer a:hover{color:#444}.clearfix:after{display:block;height:0;clear:both;visibility:hidden;content:'.'}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}@media only screen and (max-width: 767px){header{padding-top:10px;padding-bottom:10px}#downloads{margin-bottom:25px}#download-zip,#download-tar-gz{display:none}.inner{width:94%;margin:0 auto}}
+    
+      @import url("https://fonts.googleapis.com/css?family=Chivo:900");.highlight table td{padding:5px}.highlight table pre{margin:0}.highlight,.highlight .w{color:#d0d0d0}.highlight .err{color:#151515;background-color:#ac4142}.highlight .c,.highlight .cd,.highlight .cm,.highlight .c1,.highlight .cs{color:#888}.highlight .cp{color:#f4bf75}.highlight .nt{color:#f4bf75}.highlight .o,.highlight .ow{color:#d0d0d0}.highlight .p,.highlight .pi{color:#d0d0d0}.highlight .gi{color:#90a959}.highlight .gd{color:#ac4142}.highlight .gh{color:#6a9fb5;font-weight:bold}.highlight .k,.highlight .kn,.highlight .kp,.highlight .kr,.highlight .kv{color:#aa759f}.highlight .kc{color:#d28445}.highlight .kt{color:#d28445}.highlight .kd{color:#d28445}.highlight .s,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .sh,.highlight .sx,.highlight .s1{color:#90a959}.highlight .sr{color:#75b5aa}.highlight .si{color:#8f5536}.highlight .se{color:#8f5536}.highlight .nn{color:#f4bf75}.highlight .nc{color:#f4bf75}.highlight .no{color:#f4bf75}.highlight .na{color:#6a9fb5}.highlight .m,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .il,.highlight .mo,.highlight .mb,.highlight .mx{color:#90a959}.highlight .ss{color:#90a959}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{padding:0;margin:0;font:inherit;font-size:100%;vertical-align:baseline;border:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-spacing:0;border-collapse:collapse}body{font-family:'Helvetica Neue', Helvetica, Arial, serif;font-size:1em;line-height:1.5;color:#6d6d6d;text-shadow:0 1px 0 rgba(255,255,255,0.8);background:#e7e7e7 url(../images/body-bg.png) 0 0 repeat}a{color:#d5000d}a:hover{color:#c5000c}header{padding-top:35px;padding-bottom:25px}header h1{font-family:'Chivo', 'Helvetica Neue', Helvetica, Arial, serif;font-size:48px;font-weight:900;line-height:1.2;color:#303030;letter-spacing:-1px}header h2{font-size:24px;font-weight:normal;line-height:1.3;color:#aaa;letter-spacing:-1px}#container{min-height:595px;background:transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat}.inner{width:620px;margin:0 auto}#container .inner img{max-width:100%}#downloads{margin-bottom:40px}a.button{display:block;float:left;width:179px;padding:12px 8px 12px 8px;margin-right:14px;font-size:15px;font-weight:bold;line-height:25px;color:#303030;background:#fdfdfd;background:-moz-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #f2f2f2));background:-webkit-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);background:-o-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);background:-ms-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);background:linear-gradient(to top, #fdfdfd 0%, #f2f2f2 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f2f2f2',GradientType=0 );border-top:solid 1px #cbcbcb;border-right:solid 1px #b7b7b7;border-bottom:solid 1px #b3b3b3;border-left:solid 1px #b7b7b7;border-radius:30px;-webkit-box-shadow:10px 10px 5px #888;-moz-box-shadow:10px 10px 5px #888;box-shadow:0px 1px 5px #e8e8e8;-moz-border-radius:30px;-webkit-border-radius:30px}a.button:hover{background:#fafafa;background:-moz-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #f6f6f6));background:-webkit-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);background:-o-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);background:-ms-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);background:linear-gradient(to top, #fdfdfd 0%, #f6f6f6, 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f6f6f6',GradientType=0 );border-top:solid 1px #b7b7b7;border-right:solid 1px #b3b3b3;border-bottom:solid 1px #b3b3b3;border-left:solid 1px #b3b3b3}a.button span{display:block;height:23px;padding-left:50px}#download-zip span{background:transparent url(../images/zip-icon.png) 12px 50% no-repeat}#download-tar-gz span{background:transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat}#view-on-github span{background:transparent url(../images/octocat-icon.png) 12px 50% no-repeat}#view-on-github{margin-right:0}code,pre{margin-bottom:30px;font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;font-size:14px;color:#222}code{padding:0 3px;background-color:#f2f2f2;border:solid 1px #ddd}pre{padding:20px;overflow:auto;color:#f2f2f2;text-shadow:none;background:#303030}pre code{padding:0;color:#f2f2f2;background-color:#303030;border:none}ul,ol,dl{margin-bottom:20px}hr{height:1px;padding-bottom:1em;margin-top:1em;line-height:1px;background:transparent url("../images/hr.png") 50% 0 no-repeat;border:none}strong{font-weight:bold}em{font-style:italic}table{width:100%;border:1px solid #ebebeb}th{font-weight:500}td{font-weight:300;border:1px solid #ebebeb}form{padding:20px;background:#f2f2f2}h1{font-size:32px}h2{margin-bottom:8px;font-size:22px;font-weight:bold;color:#303030}h3{margin-bottom:8px;font-size:18px;font-weight:bold;color:#d5000d}h4{font-size:16px;font-weight:bold;color:#303030}h5{font-size:1em;color:#303030}h6{font-size:.8em;color:#303030}p{margin-bottom:20px;font-weight:300}a{text-decoration:none}p a{font-weight:400}blockquote{padding:0 0 0 30px;margin-bottom:20px;font-size:1.6em;border-left:10px solid #e9e9e9}ul li{list-style-position:inside;list-style:disc;padding-left:20px}ol li{list-style-position:inside;list-style:decimal;padding-left:3px}dl dt{color:#303030}footer{padding-top:20px;padding-bottom:30px;margin-top:40px;font-size:13px;color:#aaa;background:transparent url("../images/hr.png") 0 0 no-repeat}footer a{color:#666}footer a:hover{color:#444}.clearfix:after{display:block;height:0;clear:both;visibility:hidden;content:'.'}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}@media only screen and (max-width: 767px){header{padding-top:10px;padding-bottom:10px}#downloads{margin-bottom:25px}#download-zip,#download-tar-gz{display:none}.inner{width:94%;margin:0 auto}}
+      td {padding:4px;border-bottom:2px solid #dddddd;}
+      th {border-top: 1px solid black; border-bottom: 1px solid black;}
+      tr:nth-child(even) {
+        background-color: #eeeeee
+      }
+      table{margin-bottom: 8px}
     </style>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -61,41 +69,213 @@
 </ul>
 <h2 id="logistics-and-people">Logistics and People</h2>
 <p>17-445/17-645, Fall 2019, 12 units</p>
-<p>Monday/Wednesday 1:30-2:50</p>
-<p><a href="https://www.cs.cmu.edu/~ckaestne/">Christian Kaestner</a> and <a href="https://eskang.github.io/">Eunsuk Kang</a></p>
+<p>Lectures Monday/Wednesdays 1:30-2:50, GHC 4211</p>
+<p>Recitation Fridays 10:30-11:20, GHC 4102</p>
+<p>Instructors: <a href="https://www.cs.cmu.edu/~ckaestne/">Christian Kaestner</a> and <a href="https://eskang.github.io/">Eunsuk Kang</a></p>
+<p>Teaching assistant: <a href="https://www.cs.cmu.edu/~chupanw/">Chu-Pan Wong</a></p>
+<p>Office Hours:</p>
+<ul>
+<li>Christian, Monday 11-11:50, Wean 5126</li>
+<li>Eunsuk, By appointment, Wean 5319</li>
+<li>Chu-Pan, Wednesday 15:00-16:00, Wean 4103</li>
+</ul>
 <p>Unless you have questions to specific instructors, we prefer that you email us at <a href="mailto:se-ai@lists.andrew.cmu.edu">se-ai@lists.andrew.cmu.edu</a>, where you will reach the entire teaching staff of the course.</p>
 <p>Open to undergraduate and graduate students meeting the prerequisites.</p>
-<p>Both instructors have an open door policy: If either of the instructors&#39; office doors are open and no-one else is meeting with us, we are happy to answer any course-related questions. If you prefer an appointment, email the instructors.</p>
+<p>All instructors and teaching assistants have an open door policy: If our office door is open and no-one else is meeting with us, we are happy to answer any course-related questions. If you prefer an appointment, email the instructors or talk to us before or after class.</p>
 <h2 id="course-content">Course content</h2>
-<p>The following schedule describes the current planing status and the covered concepts. It is subject to change and will be updated as the semester progresses, especially to help focus on requested topics or support learning.</p>
-<ul>
-<li>Introduction motivation</li>
-<li>Case study discussion and problem analysis</li>
-<li>Basics of a data analytics pipeline (feature extraction etc) - End to end scenario</li>
-<li>Intelligent systems - Components and challenges (experience vs intelligence vs orchestration)</li>
-<li>Dealing with ML mistakes: Requirements and architectural tactics + Risk analysis</li>
-<li>Architecture: Planning where models live and how they get updated</li>
-<li>Understanding tradeoffs of modeling techniques: A quick survey</li>
-<li>Understanding tradeoffs of modeling techniques: A quick survey - Part 2</li>
-<li>Data quality</li>
-<li>Model quality</li>
-<li>QA automation </li>
-<li>Debugging and experimentation infrastructure, sensitivity analysis</li>
-<li>Goals and measurement; testing in production </li>
-<li>Continuous deployment, architectural considerations, infrastructure, QA automation, detecting skew</li>
-<li>Telemetry and monitoring and alerts</li>
-<li>Ethics</li>
-<li>Ethics + Fairness + Testing - Part 2</li>
-<li>Infrastructure design, testing, and reuse; modularity and infrastructure churn</li>
-<li>Scalability and distributed systems</li>
-<li>Scalability and distributed systems - Part 2</li>
-<li>Data provenance (modeling, analysis, tooling), feedback loops</li>
-<li>Reproducibility and versioning at scale</li>
-<li>Process and team reflection</li>
-<li>Technical debt</li>
-<li>Security and adversarial learning, threat modeling</li>
-<li>Planning a ML product in a startup - end to end discussion </li>
-</ul>
+<p>Course content is still under development. A more detailed breakdown of topics and learning goals can be found under <a href="https://github.com/ckaestne/seai/blob/master/learning%20goals.md">Learning Goals</a>. Below is a table of the current schedule with links to select lectures. Of of this is subject to change and will be updated as the semester progresses, especially to help focus on requested topics or support learning.</p>
+<p><a href="https://github.com/ckaestne/seai/blob/master/schedule.md">Schedule</a></p>
+<p>(Preliminary schedule, subject to change)</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Topic</th>
+<th>Reading</th>
+<th>Assignment due</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mon, Aug 26</td>
+<td><a href="https://ckaestne.github.io/seai/slides/01_introduction_and_motivation/intro.html">Introduction and Motivation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Aug 28</td>
+<td><a href="https://ckaestne.github.io/seai/slides/02_components/components.html">Components of an AI-Enabled System</a></td>
+<td><a href="https://www.buildingintelligentsystems.com/">Building Intelligent Systems</a>, Ch. 2+5+20</td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Sep 2</td>
+<td><strong>Labor day, no class</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Sep 4</td>
+<td><a href="https://ckaestne.github.io/seai/slides/03_se_bootcamp/se.html">Software Engineering Bootcamp</a></td>
+<td><!-- [Software Engineering for the 21st Century](http://ra.adm.cs.cmu.edu/anon/usr0/anon/usr/ftp/isri2005/CMU-ISRI-05-108.pdf) --></td>
+<td><a href="https://github.com/ckaestne/seai/tree/master/assignments/01_case_study/assignment01.md">I1: Case Study</a></td>
+</tr>
+<tr>
+<td>Mon, Sep 9</td>
+<td>Engineering Challenges for AI-Enabled Systems</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Sep 11</td>
+<td>Requirements and Dealing with Mistakes</td>
+<td></td>
+<td><a href="https://github.com/ckaestne/seai/blob/master/assignments/G1_modeling_basics/assignment02.md">G1: Modeling Basics</a></td>
+</tr>
+<tr>
+<td>Mon, Sep 16</td>
+<td>Tradeoffs among AI Techniques</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Sep 18</td>
+<td><a href="https://ckaestne.github.io/seai/slides/07_architecture/architecture.html">Software Architecture of AI-enabled Systems</a></td>
+<td><!-- [Software architecture in practice](https://www.oreilly.com/library/view/software-architecture-in/9780132942799/?ar), Ch. 1 + [Building Intelligent Systems](https://www.buildingintelligentsystems.com/), Ch. 13 --></td>
+<td>I2: Requirements/Risk</td>
+</tr>
+<tr>
+<td>Wed, Sep 23</td>
+<td><a href="https://ckaestne.github.io/seai/slides/08_model_quality/modelquality.html">Model Quality</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Sep 25</td>
+<td>Tradeoffs among AI Techniques: Presentations</td>
+<td></td>
+<td>G2: Technique Tradeoff Analysis</td>
+</tr>
+<tr>
+<td>Mon, Sep 30</td>
+<td><a href="https://ckaestne.github.io/seai/slides/09_experimentation/experimentation.html">Experimentation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Oct 2</td>
+<td>Data Quality</td>
+<td></td>
+<td>I3: Architecture</td>
+</tr>
+<tr>
+<td>Mon, Oct 7</td>
+<td>Test and Deployment Automation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Oct 9</td>
+<td><strong>Midterm</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Oct 14</td>
+<td>Ethics + Fairness</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Oct 16</td>
+<td>Ethics + Fairness</td>
+<td></td>
+<td>G3: Quality</td>
+</tr>
+<tr>
+<td>Mon, Oct 21</td>
+<td>Safety</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Oct 23</td>
+<td>Security, Adversarial Learning, and Feedback Loops</td>
+<td></td>
+<td>I4: Fairness</td>
+</tr>
+<tr>
+<td>Mon, Oct 28</td>
+<td>Scalability and Distributed Systems</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Oct 30</td>
+<td>Managing and Processing Large Datasets</td>
+<td></td>
+<td>I5: Safety/Security</td>
+</tr>
+<tr>
+<td>Mon, Nov 4</td>
+<td>Data Provenance, Reproducability, and Explainability</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Nov 6</td>
+<td>Configuration Management and Operations at Scale</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Nov 11</td>
+<td>Process and Team Reflections</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Nov 13</td>
+<td>Symbolic AI in Systems</td>
+<td></td>
+<td>G4: Test Automation</td>
+</tr>
+<tr>
+<td>Mon, Nov 18</td>
+<td>AI Engineering for Self-Driving Cars</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Nov 20</td>
+<td>Usability</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Nov 25</td>
+<td>tbd.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Nov 27</td>
+<td><strong>Thanksgiving, no class</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Mon, Dec 2</td>
+<td>Planning an AI-Enabled Product in a Startup</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wed, Dec 4</td>
+<td>Summary and Review</td>
+<td></td>
+<td>G5: System evolution</td>
+</tr>
+</tbody></table>
 <p><img src="overview.png" alt="Course topics overview" title="Course topics overview"></p>
 <h2 id="course-syllabus-and-policies">Course Syllabus and Policies</h2>
 <p>The course uses Canvas for homework submission, grading, discussion, questions, announcements, and supplementary documents; slides will be posted here; github is used to coordinate group work.</p>
@@ -107,7 +287,7 @@
 <p>We have set up a <em>prerequisite knowledge check</em> in the course&#39;s Canvas repository, where we ask 10 questions on software engineering and 10 questions on machine learning, which help you assess your background. This is set up as an ungraded quiz, where you can compare your knowledge against what we believe is useful for you to be successful in this course. The system will give specific pointers to readings and exercises that may help you fill gaps in background knowledge. Email us (<a href="mailto:se-ai@lists.andrew.cmu.edu">se-ai@lists.andrew.cmu.edu</a>) if you would like access to this check before signing up for the course or if like to talk to us about prerequisites.</p>
 <p><strong>Teamwork:</strong> Teamwork is an essential part of this course. Many assignments are done in teams of 3-5 students. Teams will be assigned by the instructor and stay together for multiple assignments. A team policy posted on Canvas applies and describes roles and teams and how to deal with conflicts and imbalances.</p>
 <p><strong>Communication:</strong> We make announcements through Canvas and use Canvas also for discussions, including clarifying homework assignments and other interactions. The instructors and TAs hold weekly office hours and are reachable by email; see above for information on how to contact us. Email them for additional appointments. They also have an open-door policy: When our door is open and we are not currently meeting with somebody else, feel free to interrupt us for course-related issues.</p>
-<p><strong>Textbook:</strong> We will be using Goeff Hulten&#39;s *&quot;Building Intelligent Systems: A Guide to Machine Learning Engineering&quot;* (ISBN: 1484234316) throughout much of the course. In addition, we will provide additional supplementary readings, including blog posts and academic papers, throughout the semester.</p>
+<p><strong>Textbook:</strong> We will be using Goeff Hulten&#39;s *&quot;Building Intelligent Systems: A Guide to Machine Learning Engineering&quot;* (ISBN: 1484234316) throughout much of the course. The library provides an <a href="https://link-springer-com.proxy.library.cmu.edu/book/10.1007%2F978-1-4842-3432-7">electronic copy</a>. In addition, we will provide additional supplementary readings, including blog posts and academic papers, throughout the semester.</p>
 <p><strong>Grading:</strong> Evaluation will be based on the following distribution: 50% assignments, 15% midterm, 20% final, 10% participation, 5% reading quizzes.</p>
 <p><strong>Time management:</strong> This is a 12-unit course, and it is our intention to manage it so that you spend close to 12 hours a week on the course, on average. In general, 4 hours/week will be spent in class and 8 hours on reading and assignments. Notice that much homework is done in groups, so please account for the overhead and decreased time flexibility that comes with groupwork. Please feel free to give the course staff feedback on how much time the course is taking for you.</p>
 <p><strong>Late work policy:</strong> Late work in group assignments will receive feedback but no credit. Late work in individual assignments will be accepted with a 10% penalty per day, for up to 3 days. Exceptions to this policy will be made only in extraordinary circumstances, almost always involving a family or medical emergency---with your academic advisor or the Dean of Student Affairs requesting the exception on your behalf. Accommodations for travel (e.g., for interviews) might be possible if requested at least 3 days in advance. Please communicate also with your team about timing issues.</p>
@@ -129,6 +309,7 @@ Any violation of this policy is cheating. The minimum penalty for cheating (incl
 If you have any question about how this policy applies in a particular situation, ask the instructors or TAs for clarification.&quot;
 Note that the instructors respect honesty in these (and indeed most!) situations.</li>
 </ul>
+<p><strong>Accommodations for students with disabilities:</strong> If you have a disability and have an accommodations letter from the Disability Resources office, we encourage you to discuss your accommodations and needs with us as early in the semester as possible. We will work with you to ensure that accommodations are provided as appropriate. If you suspect that you may have a disability and would benefit from accommodations but are not yet registered with the Office of Disability Resources, we encourage you to contact them at <a href="mailto:access@andrew.cmu.edu">access@andrew.cmu.edu</a>.</p>
 <p><strong>A note on self care.</strong> Please take care of yourself. Do your best to maintain a healthy lifestyle this semester by eating well, exercising, avoiding drugs and alcohol, getting enough sleep and taking some time to relax. This will help you achieve your goals and cope with stress. All of us benefit from support during times of struggle. You are not alone. There are many helpful resources available on campus and an important part of the college experience is learning how to ask for help. Asking for support sooner rather than later is often helpful.
 If you or anyone you know experiences any academic stress, difficult life events, or feelings like anxiety or depression, we strongly encourage you to seek support. Counseling and Psychological Services (CaPS) is here to help: call 412-268-2922 and visit their website at <a href="http://www.cmu.edu/counseling/">http://www.cmu.edu/counseling/</a>. Consider reaching out to a friend, faculty or family member you trust for help getting connected to the support that can help.</p>
 <h2 id="related-courses">Related Courses</h2>

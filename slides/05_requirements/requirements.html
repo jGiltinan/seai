@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>17-445: Requirements and Dealing with Mistakes</title>
+    <title>17-445: Requirements and Risk Analysis</title>
     <link rel="stylesheet" href="./../css/reveal.css" />
     <link rel="stylesheet" href="./../css/theme/white.css" id="theme" />
     <link rel="stylesheet" href="./../css/highlight/zenburn.css" />
@@ -46,9 +46,6 @@ Guide to Machine Learning Engineering." (2018), Chapters 6--8, and 24.
 * Achievable 
 
 * Measurable (optimizable)
-</script></section><section data-markdown><script type="text/template">## Example: Anti-Phishing System
-
-* From the textbook, Chapter 4
 </script></section></section><section ><section data-markdown><script type="text/template"># Mistakes in AI
 </script></section><section data-markdown><script type="text/template">## Types of Errors
 
@@ -58,30 +55,54 @@ Guide to Machine Learning Engineering." (2018), Chapters 6--8, and 24.
 * Safety
 
 * Security
-</script></section><section data-markdown><script type="text/template">## Safety Engineering 101
+</script></section></section><section ><section data-markdown><script type="text/template"># Risk Analysis
+</script></section><section data-markdown><script type="text/template">## Risks
 
-* Quick intro
-</script></section><section data-markdown><script type="text/template">## Risk Analysis
-
-* What is risk analysis?
+* Risk = Impact * Likelihood
 </script></section><section data-markdown><script type="text/template">## Fault Tree Analysis (FTA)
 
 * What is FTA?
-</script></section></section><section ><section data-markdown><script type="text/template"># Dealing with Errors
-</script></section><section data-markdown><script type="text/template">## Designing for Failures
 
-* Resilience engineering
-</script></section><section data-markdown><script type="text/template">## Fault Tolerance Techniques
+* A technique for systematically identifying root causes of a failure
 
-* Redundancies (caution: N-version programming)
+* FTA as a investigative tool
 
-* Voting
+* FTA as a decision making tool
+</script></section><section data-markdown><script type="text/template">## Basic Definitions
 
-* Fallback
+* Event
+	* Top Event
+* Gate
+</script></section><section data-markdown><script type="text/template">## FTA: Example
 
-* Undo
+* Small light failure example
+</script></section><section data-markdown><script type="text/template">## Analysis
 
-* Prompt user instead of automate (for critical actions)
+* What can we do with FTA?
+  * Qualitative
+  * Quantitative
+</script></section><section data-markdown><script type="text/template">## Minimal Cut Analysis
+
+* Cut
+
+* MinCut
+</script></section><section data-markdown><script type="text/template">## Failure Likelihood Analysis
+
+* Probabilitistic analysis
+</script></section><section data-markdown><script type="text/template">## FTA Process
+
+1. Specify the system design
+   * Environment + machine domains 
+   * Phenomena
+2. Identify the top event(s)   
+3. Construct the fault tree
+4. Analyze the tree
+   * Identify minimal cut sets
+5. Consider alternative designs
+6. Repeat
+</script></section><section data-markdown><script type="text/template">## Case Study: Infusion Pump
+
+* Construct a FTA for the top event: Patient overdosed
 </script></section></section><section  data-markdown><script type="text/template"># Summary
 </script></section></div>
     </div>

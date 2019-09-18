@@ -183,9 +183,8 @@ Ghemawat, Sanjay, Howard Gobioff, and Shun-Tak Leung. "[The Google file system.]
 
 
 </script></section></section><section ><section data-markdown><script type="text/template">
-# Software Architecture and AI Components -- Two Case Studies
-</script></section><section data-markdown><script type="text/template">
-## Case Study: Augmented Reality Translation
+# Case Study: Augmented Reality Translation
+
 
 ![Seoul Street Signs](seoul.jpg)
 <!-- .element: class="stretch" -->
@@ -199,21 +198,12 @@ Ghemawat, Sanjay, Howard Gobioff, and Shun-Tak Leung. "[The Google file system.]
 </aside></script></section><section data-markdown><script type="text/template">## Qualities of Interest?
 
 <!-- discussion -->
-</script></section><section data-markdown><script type="text/template">## Case Study: Uber Surge Prediction
-![Surge Screen in Uber App](ubersurge.png)
-<aside class="notes"><p>Consider you work at Uber and want to predict where rider demand is going to be high.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Qualities of Interest?
 
-<!-- discussion -->
 </script></section></section><section  data-markdown><script type="text/template"># Architectural Decision: Selecting AI Techniques
 
 What AI techniques to use and why? Tradeoffs?
 
-<!-- colstart -->
 ![](googletranslate.png)
-<!-- col -->
-![](ubersurge.png)
-<!-- colend -->
 
 <aside class="notes"><p>Relate back to previous lecture about AI technique tradeoffs, including for example
 Accuracy
@@ -305,27 +295,16 @@ What qualities are relevant for the decision?
 * Support online experiments
 * Ability to monitor
 
-</script></section><section data-markdown><script type="text/template">## Where Should the Model Live?
 
-* Car
-* Phone
-* Cloud
 
-What qualities are relevant for the decision? 
 
-<!-- split -->
-![](ubersurge.png)
 
-<aside class="notes"><p>Trigger initial discussion</p>
-</aside></script></section></section><section ><section data-markdown><script type="text/template"># Architectural Decision: Telemetry Requirements</script></section><section data-markdown><script type="text/template">## Telemetry Design
+
+</script></section></section><section ><section data-markdown><script type="text/template"># Architectural Decision: Telemetry Requirements</script></section><section data-markdown><script type="text/template">## Telemetry Design
 
 How to evaluate mistakes in production?
 
-<!-- colstart -->
 ![](googletranslate.png)
-<!-- col -->
-![](ubersurge.png)
-<!-- colend -->
 
 <aside class="notes"><p>Discuss strategies to determine accuracy in production. What kind of telemetry needs to be collected?</p>
 </aside></script></section><section data-markdown><script type="text/template">## The Right and Right Amount of Telemetry
@@ -347,11 +326,7 @@ What data to collect? How much? When?
 
 Estimate data volume and possible bottlenecks in system.
 
-<!-- colstart -->
 ![](googletranslate.png)
-<!-- col -->
-![](ubersurge.png)
-<!-- colend -->
 
 <aside class="notes"><p>Discuss alternatives and their tradeoffs. Draw models as suitable.</p>
 </aside></script></section></section><section ><section data-markdown><script type="text/template"># Architectural Decision: Independent Model Service
@@ -375,11 +350,7 @@ What's the interface between the AI component and the rest of the system?
 
 Consider encapsulating the model as a microservice. Sketch a (REST) API.
 
-<!-- colstart -->
 ![](googletranslate.png)
-<!-- col -->
-![](ubersurge.png)
-<!-- colend -->
 </script></section><section data-markdown><script type="text/template">## Future-Proofing an API
 
 * Anticipating and encapsulating change
@@ -416,21 +387,13 @@ Consider encapsulating the model as a microservice. Sketch a (REST) API.
 
 What could happen if models become stale?
 
-<!-- colstart -->
 ![](googletranslate.png)
-<!-- col -->
-![](ubersurge.png)
-<!-- colend -->
 
 Risk: Discuss drift, adversarial interactions, feedback loops</script></section><section data-markdown><script type="text/template">## Update Requirements or Goals
 
 Estimate the required update frequency and the related cost regarding training, data transfer, etc.
 
-<!-- colstart -->
 ![](googletranslate.png)
-<!-- col -->
-![](ubersurge.png)
-<!-- colend -->
 
 <aside class="notes"><p>Discuss how frequently the involved models need to be updated. Are static models acceptable? Identify what information to collect and estimate 
 the relevant values.</p>
@@ -475,11 +438,7 @@ Hardware, software, models?
 
 Qualities of interest? Important design tradeoffs? Decisions?
 
-<!-- colstart -->
 ![](googletranslate.png)
-<!-- col -->
-![](ubersurge.png)
-<!-- colend -->
 </script></section><section  data-markdown><script type="text/template">
 # Summary
 
@@ -493,7 +452,42 @@ Qualities of interest? Important design tradeoffs? Decisions?
     - whether and how to modularize the model service
     - when and how to update models
     - build vs buy, cloud resources
-</script></section></div>
+
+
+</script></section><section ><section data-markdown><script type="text/template">
+# Case Study 2: Uber Surge Prediction
+![Surge Screen in Uber App](ubersurge.png)
+<aside class="notes"><p>Consider you work at Uber and want to predict where rider demand is going to be high.</p>
+</aside></script></section><section data-markdown><script type="text/template">## Qualities of Interest?
+
+<!-- discussion -->
+</script></section><section data-markdown><script type="text/template">
+
+<!-- colstart -->
+![](googletranslate.png)
+<!-- col -->
+![](ubersurge.png)
+<!-- colend -->
+</script></section><section data-markdown><script type="text/template">## Where Should the Model Live?
+
+* Car
+* Phone
+* Cloud
+
+What qualities are relevant for the decision? 
+
+<!-- split -->
+![](ubersurge.png)
+
+<aside class="notes"><p>Trigger initial discussion</p>
+</aside></script></section><section data-markdown><script type="text/template">## Telemetry Design
+
+How to evaluate mistakes in production?
+
+![](ubersurge.png)
+
+
+</script></section></section></div>
     </div>
 
     <script src="./../js/reveal.js"></script>

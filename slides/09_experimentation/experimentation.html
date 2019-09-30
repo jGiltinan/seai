@@ -126,10 +126,10 @@ Correlation != Causation
 ![](weather.jpg)
 <!-- colend -->
 
-</script></section></section><section  data-markdown><script type="text/template">## Correlation vs Causation
+</script></section><section data-markdown><script type="text/template">## Correlation vs Causation
 
 [![xkcd.com/552](https://imgs.xkcd.com/comics/correlation.png)](https://www.xkcd.com/552/)
-</script></section><section  data-markdown><script type="text/template">## Handling Confounds
+</script></section><section data-markdown><script type="text/template">## Handling Confounds
 
 Strategies:
 * Keep constant, matching
@@ -149,7 +149,17 @@ Strategies:
 
 <aside class="notes"><p>Without human subjects (e.g., comparing models) and with reliable measures for Y, we often have comparably little noise and can keep most factors constant.</p>
 <p>We&#39;ll come back to statistics in a bit.</p>
-</aside></script></section><section ><section data-markdown><script type="text/template"># Offline Experimentation
+</aside></script></section><section data-markdown><script type="text/template">## Research Design?
+
+<!-- colstart -->
+Does obtaining a CMU degree lead to a higher salary after graduation?
+![](graduation.jpg)
+<!-- col -->
+Do DNN produce higher accuracy models than random forests for forecasting the weather?
+![](weather.jpg)
+<!-- colend -->
+
+</script></section></section><section ><section data-markdown><script type="text/template"># Offline Experimentation
 </script></section><section data-markdown><script type="text/template">## Data Science is Exploratory and Iterative
 
 ![Data Science Loop](datascienceloop.jpg)
@@ -189,6 +199,9 @@ param --> measure
 Repeated evaluation of model quality until no further improvement or good enough
 
 Often on static learning and evaluation set
+</script></section><section data-markdown><script type="text/template">## Your Practices?
+
+<!-- discussion -->
 </script></section><section data-markdown><script type="text/template">## Experimentation Challenges
 
 * Notebooks allow lightweight experimentation, but 
@@ -199,12 +212,13 @@ Often on static learning and evaluation set
     * later cleanup often needed
 * Experiments may be expensive (time + resources, learning + evaluation)
 * Overfitting despite separate evaluation set
+* Data versioning at scale
 
 <!-- references -->
 
 Further reading: Kery, M. B., Radensky, M., Arya, M., John, B. E., & Myers, B. A. (2018, April). [The story in the notebook: Exploratory data science using a literate programming tool](https://dl.acm.org/citation.cfm?id=3173748). In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (p. 174). ACM.
-
-</script></section></section><section ><section data-markdown><script type="text/template"># Sensitivity Analysis
+</script></section><section data-markdown><script type="text/template">[![PhD Comics: notFinal](http://www.phdcomics.com/comics/archive/phd101212s.gif)](http://phdcomics.com/comics/archive.php?comicid=1531)
+<!-- .element: class="stretch" --></script></section></section><section ><section data-markdown><script type="text/template"># Sensitivity Analysis
 
 <!-- references -->
 
@@ -226,7 +240,27 @@ Example: Policy discussion for a new road -- Lots of stakeholders with conflicti
 <aside class="notes"><p>What factors might influence the policy decision to build new train tracks in a city or extend an airport?
 Which parameters are important for making an informed decision, which are not?</p>
 <p>Photo by <a href="https://pixabay.com/photos/site-demolition-work-demolition-3688262/">Michael Gaida</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## Classic Sensitivity Analysis Settings
+</aside></script></section><section data-markdown><script type="text/template">## Sensitivity Analysis 
+
+Goal: Understand influence of model choices and parameters
+
+Needs to understand the space
+
+For understanding, debugging, planning
+
+Examples: Understand influential features, test robustness
+
+<!-- split -->
+## Optimization
+
+Goal: Find the best choices and parameters
+
+Search problem
+
+For tuning
+
+Examples: Hyperparameter tuning, feature selection
+</script></section><section data-markdown><script type="text/template">## Classic Sensitivity Analysis Settings
 
 * Models of the real world (economics, policy, physics)
 * Lots of input parameters and constants 
@@ -613,9 +647,10 @@ Further readings:
 * Parameter tuning
 </script></section><section data-markdown><script type="text/template">## Challenges
 
-* Tracking of experiments, versioning
+* Tracking of experiments, versioning of modeling code *and* data
 * Slow experiments, slow feedback cycles
 * Many choices, many interactions
+* Many one-off experiments, little merging
 * Interaction with complex backends and datasets
 *
 * No standardized platforms</script></section><section data-markdown><script type="text/template">## Many solutions
@@ -653,6 +688,12 @@ dvc push
 
 
 https://dvc.org/
+</script></section><section data-markdown><script type="text/template">## Others
+
+* Pachyderm, pipelines and data versioning: https://www.pachyderm.io/
+* MissingLink for deep learning: https://missinglink.ai/
+* Michaelangeo at Uber: https://eng.uber.com/michelangelo/
+* Tensorflow Extended for reproducibility: https://www.tensorflow.org/tfx/
 </script></section></section><section  data-markdown><script type="text/template">
 
 # Interacting with and supporting data scientists

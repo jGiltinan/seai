@@ -33,14 +33,13 @@ Required reading: Schelter, S., Lange, D., Schmidt, P., Celikel, M., Biessmann, 
 
 </script></section><section ><section data-markdown><script type="text/template">
 # Data-Quality Challenges
-</script></section><section data-markdown><script type="text/template">## Case Study: Agriculture management to increase crop yields
+</script></section><section data-markdown><script type="text/template">## Case Study: Predicting Delivery Time
 
-![Fields](fields.jpg)
+![Door Dash](doordash.png)
+</script></section><section data-markdown><script type="text/template">## Order Delivery Database
 
-<aside class="notes"><p>Sketch ideas what&#39;s possible.
-Collect typical data sources.</p>
-<p>Image: <a href="https://www.maxpixel.net/Agriculture-Campaign-Green-Aerial-View-Drone-4048496">https://www.maxpixel.net/Agriculture-Campaign-Green-Aerial-View-Drone-4048496</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## Data is noisy
+![Restaurant data](restaurant-data.jpg)
+</script></section><section data-markdown><script type="text/template">## Data is noisy
 
 * Unreliable sensors or data entry
 * Wrong results and computations, crashes
@@ -51,23 +50,23 @@ Collect typical data sources.</p>
 * **Examples?**
 </script></section><section data-markdown><script type="text/template">## Data changes
 
-* Sensors replaced
-* Software components replaced
-* Other models change
+* System objective changes over time
+* Software components are upgraded or replaced
+* Prediction models change
 * Quality of supplied data changes
 * User behavior changes
 *
 * **Examples?**
 </script></section><section data-markdown><script type="text/template">## Users may deliberately change data
 
-* Users react to model predictions
-* Users try to attack the model
+* Users react to model output
+* Users try to game/deceive the model
 *
 * **Examples?**
 </script></section><section data-markdown><script type="text/template">## Criteria for Data Quality
 
 * Accuracy
-  * The Data was recorded correctly.
+  * The data was recorded correctly.
 * Completeness
   * All relevant data was recorded.
 * Uniqueness
@@ -121,14 +120,17 @@ Q. Can you spot the problems with the data?
   * Repair data vs repair rules, one at a time or holistic
   * Data transformation or mapping
   * Automated vs human guided
-</script></section><section data-markdown><script type="text/template">## Many approaches, problem dependent
+</script></section><section data-markdown><script type="text/template">## Error Detection
 
 * Illegal values: min, max, variance, deviations, cardinality
 * Misspelling: sorting + manual inspection, dictionary lookup
 * Missing values: null values, default values
 * Duplication: sorting, edit distance, normalization
-*
-* **Examples?**
+</script></section><section data-markdown><script type="text/template">## Error Detection: Example
+
+![Dirty data](dirty-data-example.jpeg)
+
+Q. Can we (automatically) detect errors? Which errors are problem-dependent?
 </script></section><section data-markdown><script type="text/template">## Common Strategies
 
 * Enforce schema constraints
@@ -139,6 +141,7 @@ Q. Can you spot the problems with the data?
   * e.g., Testing for normal distribution, remove > 2σ
 * Normalization
   * e.g., range [0, 1], power transform
+* Fill in missing values
 </script></section><section data-markdown><script type="text/template">## Data Cleaning Tools
 
 ![Open Refine](openrefine.jpg)
@@ -359,7 +362,7 @@ if (detailedLogging) log.println("Log started");
     * Tokenizable string (long strings, all unique)
     * Zip code as number
 * Outliers and scaling
-    * Unormalized feature (varies widely)
+    * Unnormalized feature (varies widely)
     * Tailed distributions
     * Uncommon sign
 * Packaging

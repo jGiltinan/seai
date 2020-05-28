@@ -1,0 +1,53 @@
+{
+  "_args": [
+    [
+      "reveal.js-plugins@1.0.0",
+      "/home/runner/work/seai/seai/lectures"
+    ]
+  ],
+  "_development": true,
+  "_from": "reveal.js-plugins@1.0.0",
+  "_id": "reveal.js-plugins@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-JmWKpukZeD+khybsg+NCSM29PlJ5MiarJM97+AtGZ9iVSTpjHxvHnePPhqDr6AJ6l/9doWqZxqX7FI2NIlx2Hg==",
+  "_location": "/reveal.js-plugins",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "reveal.js-plugins@1.0.0",
+    "name": "reveal.js-plugins",
+    "escapedName": "reveal.js-plugins",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "/reveal-md"
+  ],
+  "_resolved": "https://registry.npmjs.org/reveal.js-plugins/-/reveal.js-plugins-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "/home/runner/work/seai/seai/lectures",
+  "author": {
+    "name": "Asvin Goel"
+  },
+  "bugs": {
+    "url": "https://github.com/rajgoel/reveal.js-plugins/issues"
+  },
+  "dependencies": {
+    "npm": "^5.8.0"
+  },
+  "description": "A plugin collection for your reveal.js presentations",
+  "homepage": "https://github.com/rajgoel/reveal.js-plugins/blob/master/README.md",
+  "keywords": [
+    "reveal",
+    "plugins"
+  ],
+  "license": "MIT",
+  "name": "reveal.js-plugins",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajgoel/reveal.js-plugins.git"
+  },
+  "version": "1.0.0"
+}

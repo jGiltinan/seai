@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./../css/highlight/zenburn.css" />
     <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <script src="./../rplugin/spreadsheet/ruleJS.all.full.min.js"></script>
+   <link rel="stylesheet" href="./../rplugin/spreadsheet/spreadsheet.css">
     <link rel="stylesheet" href="./../_assets/_assets/cmu.css" />
 
   </head>
@@ -732,6 +734,9 @@ $f(size, rooms, tax, neighborhood, ...) \rightarrow price$
         { src: './../plugin/zoom-js/zoom.js', async: true },
         { src: './../plugin/notes/notes.js', async: true },
         { src: './../plugin/math/math.js', async: true },
+        { src: './../rplugin/embed-tweet/embed-tweet.js' },
+        { src: './../rplugin/menu/menu.js' },
+        { src: './../rplugin/spreadsheet/spreadsheet.js' },
         { src: './../rplugin/chalkboard/chalkboard.js', async: true }
       ];
 
@@ -743,6 +748,11 @@ $f(size, rooms, tax, neighborhood, ...) \rightarrow price$
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         dependencies: deps,
+	chalkboard: { // font-awesome.min.css must be available
+		src: "chalkboard/chalkboard.json",
+		toggleChalkboardButton: { left: "80px" },
+		toggleNotesButton: { left: "130px" },
+	},
 	keyboard: {
 	    67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
 	    66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./../css/highlight/zenburn.css" />
     <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <script src="./../rplugin/spreadsheet/ruleJS.all.full.min.js"></script>
+   <link rel="stylesheet" href="./../rplugin/spreadsheet/spreadsheet.css">
     <link rel="stylesheet" href="./../_assets/_assets/cmu.css" />
 
   </head>
@@ -24,7 +26,7 @@ Christian Kaestner
 <!-- references -->
 
 Required reading: 
-* Hulten, Geoff. "[Building Intelligent Systems: A Guide to Machine Learning Engineering.](https://www.buildingintelligentsystems.com/)" Apress, 2018, Chapter 19 (Evaluating Intelligence).
+* 🕮 Hulten, Geoff. "[Building Intelligent Systems: A Guide to Machine Learning Engineering.](https://www.buildingintelligentsystems.com/)" Apress, 2018, Chapter 19 (Evaluating Intelligence).
 * 🗎 Ribeiro, Marco Tulio, Sameer Singh, and Carlos Guestrin. "[Semantically equivalent adversarial rules for debugging NLP models](https://www.aclweb.org/anthology/P18-1079.pdf)." In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 856-865. 2018.
 </script></section><section  data-markdown><script type="text/template">
 # Learning Goals
@@ -1048,6 +1050,9 @@ Matei Zaharia. [Introducing MLflow: an Open Source Machine Learning Platform](ht
         { src: './../plugin/zoom-js/zoom.js', async: true },
         { src: './../plugin/notes/notes.js', async: true },
         { src: './../plugin/math/math.js', async: true },
+        { src: './../rplugin/embed-tweet/embed-tweet.js' },
+        { src: './../rplugin/menu/menu.js' },
+        { src: './../rplugin/spreadsheet/spreadsheet.js' },
         { src: './../rplugin/chalkboard/chalkboard.js', async: true }
       ];
 
@@ -1059,6 +1064,11 @@ Matei Zaharia. [Introducing MLflow: an Open Source Machine Learning Platform](ht
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
         dependencies: deps,
+	chalkboard: { // font-awesome.min.css must be available
+		src: "chalkboard/chalkboard.json",
+		toggleChalkboardButton: { left: "80px" },
+		toggleNotesButton: { left: "130px" },
+	},
 	keyboard: {
 	    67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
 	    66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed

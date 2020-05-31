@@ -84,9 +84,9 @@ Basics:
         { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
         { src: './plugin/zoom-js/zoom.js', async: true },
         { src: './plugin/notes/notes.js', async: true },
-        { src: './plugin/math/math.js', async: true },
+        { src: './plugin/math/math.js' },
         { src: './rplugin/embed-tweet/embed-tweet.js' },
-        { src: './rplugin/menu/menu.js' },
+        { src: './rplugin/menu/menu.js', async: true },
         { src: './rplugin/spreadsheet/spreadsheet.js' },
         { src: './rplugin/chalkboard/chalkboard.js', async: true }
       ];
@@ -100,7 +100,6 @@ Basics:
         transition: 'default', // none/fade/slide/convex/concave/zoom
         dependencies: deps,
 	chalkboard: { // font-awesome.min.css must be available
-		src: "chalkboard/chalkboard.json",
 		toggleChalkboardButton: { left: "80px" },
 		toggleNotesButton: { left: "130px" },
 	},

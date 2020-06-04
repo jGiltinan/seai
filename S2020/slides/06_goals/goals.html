@@ -104,7 +104,6 @@ see Hulten, Chapter 2</script></section><section data-markdown><script type="tex
 
 
 
-
 </script></section></section><section ><section data-markdown><script type="text/template"># The Business View
 
 <!-- references -->
@@ -113,11 +112,11 @@ see Hulten, Chapter 2</script></section><section data-markdown><script type="tex
 <!-- colstart -->
 AI: Higher accuracy predictions at much much lower cost
 
-May use new, cheaper predictions for traditional tasks (e.g., inventory and demand forcast)
+May use new, cheaper predictions for traditional tasks (**examples?**)
 
-May now use predictions for new kinds of problems (e.g. navigation and translation)
+May now use predictions for new kinds of problems (**examples?**)
 
-May now use more predictions than before
+May now use more predictions than before 
 
 (Analogies: Reduced cost of light, reduced cost of search with the internet)
 
@@ -126,7 +125,9 @@ May now use more predictions than before
 ![Book: Prediction Machines](predictionmachinescover.png)
 
 <!-- colend -->
-</script></section><section data-markdown><script type="text/template">## The economic lense
+
+<aside class="notes"><p>May use new, cheaper predictions for traditional tasks -&gt; inventory and demand forcast; May now use predictions for new kinds of problems -&gt; navigation and translation</p>
+</aside></script></section><section data-markdown><script type="text/template">## The economic lense
 
 * predictions are critical input to decision making (not necessarily full automation)
 * decreased price in predictions makes them more attractive for more tasks
@@ -143,15 +144,40 @@ May now use more predictions than before
 <aside class="notes"><p>Cab drivers in London invested 3 years to learn streets to predict the fasted route. Navigation tools get close or better at low cost per prediction. While drivers&#39; skills don&#39;t degrade, they now compete with many others that use AI to enhance skills; human prediction no longer scarce commodity.</p>
 <p>At the same time, the value of human judgement increases. Making more decisions with better inputs, specifying the objective.</p>
 <p>Picture source: <a href="https://pixabay.com/photos/cab-oldtimer-taxi-car-city-london-203486/">https://pixabay.com/photos/cab-oldtimer-taxi-car-city-london-203486/</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## Automation with predictions
+</aside></script></section><section data-markdown><script type="text/template">## Predictions vs Judgement
 
-* Automating prediction vs judgement; possibly predicting human judgement 
+<!-- colstart -->
+Predictions are an input to decision making under uncertainty
+
+Making the decision requires judgement (determining relative payoffs of decisions and outcomes)
+
+Judgement often left to humans ("value function engineering")
+
+ML may learn to predict human judgment if enough data
+<!-- col -->
+
+```mermaid
+graph LR;
+p["Predict cancer?"] -->|yes| o;
+p-->|no| o2;
+o["cancer?"] -->|yes| x1["+"]
+o -->|no| x2["-"]
+o2["cancer?"] -->|yes| x3["-"]
+o2-->|no| x4["+"]
+```
+
+*Determine value function from value of each outcome and probability of each outcome*
+<!-- colend -->
+</script></section><section data-markdown><script type="text/template">## Automation with predictions
+
 * Automated predictions scale much better than human ones
+* Automating prediction vs predict judgement
 * Value from full and partial automation, even with humans still required
 * Highest return with full automation
     - Tasks already mostly automated, except predictions (e.g. mining)
     - Increased speed through automation (e.g., autonomous driving)
-    - Reduction in wait time (e.g., autonomous sports cameras)
+    - Reduction in wait time (e.g., space exploration)
+* Liability concerns may require human involvement
 </script></section><section data-markdown><script type="text/template">## Automation in Controlled Environments
 
 ![Trucks in a Mine](mine.jpg)
@@ -264,6 +290,18 @@ LI --> OO(Organizational objectives)
 **accurate models themselves are not a goal**
 
 **AI may only very indirectly influence such organizational objectives, influence hard to quantify, lagging measures**
+
+</script></section><section data-markdown><script type="text/template">## Breaking Down Processes
+
+Break overall goals along processes
+
+* Break workflow into tasks
+* Identify decisions in tasks
+* Evaluate benefit of AI for prediction or automation
+* Evaluate the influence of improving some tasks on process
+
+Maintain mapping from task-specific goals to system goals
+
 </script></section><section data-markdown><script type="text/template">## Leading Indicators
 
 *Measures correlating with future success, from the business' perspective*
@@ -297,8 +335,6 @@ LI --> OO(Organizational objectives)
 * Training cost
 
 **not directly linked to business goals**
-
-
 </script></section><section data-markdown><script type="text/template">## Layering of Success Measures
 
 *Example: Amazon shopping recommendations*
@@ -336,6 +372,26 @@ MP(Model properties) --> UO(User outcomes)
 UO --> LI(Leading indicators)
 LI --> OO(Organizational objectives)
 ```
+</script></section><section data-markdown><script type="text/template">## Exercise: Automating Admission Decisions to Master's Program
+<!-- smallish -->
+Discuss in groups, breakout rooms
+
+What are the *goals* behind automating admissions decisions?
+
+**Organizational objectives, leading indicators, user outcomes, model properties?**
+
+Report back in 10 min
+
+<!-- discussion -->
+
+
+
+
+
+
+
+
+
 
 
 </script></section></section><section ><section data-markdown><script type="text/template"># Excursion: Measurement

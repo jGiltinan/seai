@@ -254,6 +254,14 @@ What qualities are relevant for the decision?
 <!-- discussion -->
 
 <aside class="notes"><p>Identify at least OCR and Translation service as two AI components in a larger system. Discuss which system components are worth modeling (e.g., rendering, database, support forum). Discuss how to get good estimates for latency and bandwidth.</p>
+<p>Some data:
+200ms latency is noticable as speech pause; 
+20ms is perceivable as video delay, 10ms as haptic delay;
+5ms referenced as cybersickness threshold for virtual reality
+20ms latency might be acceptable</p>
+<p>bluetooth latency around 40ms to 200ms</p>
+<p>bluetooth bandwidth up to 3mbit, wifi 54mbit, video stream depending on quality 4 to 10mbit for low to medium quality</p>
+<p>google glasses had 5 megapixel camera, 640x360 pixel screen, 1 or 2gb ram, 16gb storage</p>
 </aside></script></section><section data-markdown><script type="text/template">## When would one use the following designs?
 
 * Static intelligence in the product
@@ -336,6 +344,8 @@ Estimate data volume and possible bottlenecks in system.
 ![](googletranslate.png)
 
 <aside class="notes"><p>Discuss alternatives and their tradeoffs. Draw models as suitable.</p>
+<p>Some data for context:
+Full-screen png screenshot on Pixel 2 phone (1080x1920) is about 2mb (2 megapixel); Google glasses had a 5 megapixel camera and a 640x360 pixel screen, 16gb of storage, 2gb of RAM. Cellar cost are about $10/GB.</p>
 </aside></script></section><section data-markdown><script type="text/template">## Related: Cost of Data and Feature Engineering
 
 * How much data do we acquire for training and evaluating models?

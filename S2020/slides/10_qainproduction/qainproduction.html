@@ -17,19 +17,22 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><div id="footer">17-445 Software Engineering for AI-Enabled Systems, Christian Kaestner</div><section  data-markdown><script type="text/template">
+      <div class="slides"><div id="footer">17-445 Software Engineering for AI-Enabled Systems, Christian Kaestner</div><section ><section data-markdown><script type="text/template">
 
 # Quality Assessment in Production
 
 Christian Kaestner
+
 
 <!-- references -->
 
 Required Reading: Alec Warner and Štěpán Davidovič. "[Canary Releases](https://landing.google.com/sre/workbook/chapters/canarying-releases/)." in [The Site Reliability Workbook](https://landing.google.com/sre/books/), O'Reilly 2018
 
 Suggested Reading: Georgi Georgiev. “[Statistical Significance in A/B Testing – a Complete Guide](http://blog.analytics-toolkit.com/2017/statistical-significance-ab-testing-complete-guide/#noninf).” Blog 2018
+</script></section><section data-markdown><script type="text/template">
+<div class="tweet" data-src="https://twitter.com/changelog/status/1137359428632621060"></div>
 
-</script></section><section  data-markdown><script type="text/template">## Learning Goals
+</script></section></section><section  data-markdown><script type="text/template">## Learning Goals
 
 * Design telemetry for evaluation in practice
 * Plan and execute experiments (chaos, A/B, shadow releases, ...) in production
@@ -436,7 +439,7 @@ Source: https://cognetik.com/why-you-should-build-an-ab-test-dashboard/</script>
 
 <!-- discussion -->
 
-</script></section></section><section ><section data-markdown><script type="text/template">## A/B testing automation
+</script></section></section><section ><section data-markdown><script type="text/template"># A/B testing automation
 
 * Experiment configuration through DSLs/scripts
 * Queue experiments
@@ -550,6 +553,7 @@ Further readings:
 </script></section><section data-markdown><script type="text/template">## Let's Learn from DevOps
 
 ![DevOps](devops.png)
+
 Distinct roles and expertise, but joint responsibilities, joint tooling
 </script></section><section data-markdown><script type="text/template">## Supporting Data Scientists
 
@@ -558,6 +562,15 @@ Distinct roles and expertise, but joint responsibilities, joint tooling
     - make it easy to deploy and test models
 * Provide access to telemetry data and dashboards
 * Encourage modeling infrastructure and versioning beyond notebooks
+
+
+</script></section><section data-markdown><script type="text/template">## Exercise: Infrastructure Design 
+
+*Scenario: Injury detection in smart home workout (laptop camera)*
+
+Discuss: Deployment and infrastructure decisions for A/B experiments -- how to divide users, how to implement A/B testing, what access to give to data scientists?
+
+![Home Workout](homeworkout.jpg)
 
 
 

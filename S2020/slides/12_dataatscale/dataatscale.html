@@ -32,7 +32,7 @@ Required reading: Martin Kleppmann. [Designing Data-Intensive Applications](http
 * Organize different data management solutions and their tradeoffs
 * Explain the tradeoffs between batch processing and stream processing and the lambda architecture
 * Recommend and justify a design and corresponding technologies for a given system
-</script></section><section  data-markdown><script type="text/template"># Case Study
+</script></section><section ><section data-markdown><script type="text/template"># Case Study
 
 ![Google Photos Screenshot](gphotos.png)
 
@@ -41,7 +41,11 @@ Required reading: Martin Kleppmann. [Designing Data-Intensive Applications](http
 <li>in may 2017: 500M users, uploading 1.2billion photos per day (14k/sec)</li>
 <li>in Jun 2019 1 billion users</li>
 </ul>
-</aside></script></section><section ><section data-markdown><script type="text/template">
+</aside></script></section><section data-markdown><script type="text/template">
+## "Zoom adding capacity"
+
+<iframe src="https://giphy.com/embed/3oz8xtBx06mcZWoNJm" width="480" height="362" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Data Management and Processing in ML-Enabled Systems
 </script></section><section data-markdown><script type="text/template"># Kinds of Data
 
@@ -444,7 +448,11 @@ How do you get the right data to the right place in the right format?
 
 **Plan and document data flows**
 </script></section><section data-markdown><script type="text/template">![](deletedissues.svg)
+</script></section><section data-markdown><script type="text/template">
+[![Lots of data storage systems](etleverywhere.png)](https://youtu.be/_bvrzYOA8dY?t=1452)
 
+<!-- reference -->
+Molham Aref "[Business Systems with Machine Learning](https://www.youtube.com/watch?v=_bvrzYOA8dY)"
 
 </script></section></section><section ><section data-markdown><script type="text/template"># Excursion: ETL Tools
 
@@ -677,10 +685,14 @@ Source: https://blog.appdynamics.com/tag/fiserv/
 </script></section></section><section  data-markdown><script type="text/template">
 # Summary
 
-* Data storage strategies and their tradeoffs
-* Partitioning and replication for scalability
-* Design considerations: mutable vs immutable data
+* Large amounts of data (training, inference, telemetry, models)
+* Distributed storage and computation for scalability
 * Common design patterns (e.g., batch processing, stream processing, lambda architecture)
+* Design considerations: mutable vs immutable data
+* Distributed computing also in machine learning
+* Lots of tooling for data extraction, transformation, processing
+* Many challenges through distribution: failures, debugging, performance, ...
+
 
 Recommended reading: Martin Kleppmann. [Designing Data-Intensive Applications](https://dataintensive.net/). OReilly. 2017.
 

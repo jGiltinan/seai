@@ -122,10 +122,10 @@ necessary for job success, the resulting disparities would be legal.&quot;</p>
 </blockquote>
 </aside></script></section><section data-markdown><script type="text/template">## Definitions of Algorithmic Fairness
 
-* Anti-classifcation (Fairness through Blindness)
-* Group fairness
-* Equalized odds
-* Predictive rate parity
+* Anti-classification (Fairness through Blindness)
+* Independence (group fairness)
+* Separation (equalized odds)
+* ...
 
 
 
@@ -179,6 +179,9 @@ $\forall x. f(x[p\leftarrow 0]) = f(x[p\leftarrow 1])$
 Test with random input data (see prior lecture on [Automated Random Testing](https://ckaestne.github.io/seai/S2020/slides/04_modelquality/modelquality.html#/10)) or on any test data
 
 Any single inconsistency shows that the protected attribute was used. Can also report percentage of inconsistencies.
+
+<!-- references -->
+See for example: Galhotra, Sainyam, Yuriy Brun, and Alexandra Meliou. "[Fairness testing: testing software for discrimination](http://people.cs.umass.edu/brun/pubs/pubs/Galhotra17fse.pdf)." In Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering, pp. 498-510. 2017.
 </script></section><section data-markdown><script type="text/template">## Correlated Features
 
 * Test correlation between protected attributes and other features
@@ -224,6 +227,14 @@ $P[R = 1 | A = 0]  = P[R = 1 | A = 1]$ or $R \perp A$
   * The predicted rate of recidivism is the same across all races
   * Chance of promotion the same across all genders
 
+</script></section><section data-markdown><script type="text/template">## Exercise: Cancer Diagnosis
+
+![](cancer-stats.jpg)
+
+* 1000 data samples (500 male & 500 female patients)
+* What's the overall recall & precision?
+* Does the model achieve *independence*
+
 </script></section><section data-markdown><script type="text/template">## Independence vs. Anti-Discrimination
 
 <!-- discussion -->
@@ -236,13 +247,6 @@ $P[R = 1 | A = 0]  = P[R = 1 | A = 1]$ or $R \perp A$
 * Separately measure rate of positive predictions
 * Report issue if rate differs beyond $\epsilon$ across groups
 
-</script></section><section data-markdown><script type="text/template">## Exercise: Cancer Diagnosis
-
-![](cancer-stats.jpg)
-
-* 1000 data samples (500 male & 500 female patients)
-* What's the overall recall & precision?
-* Does the model achieve *independence*
 </script></section><section data-markdown><script type="text/template">## Limitations of Independence?
 
 <!-- discussion -->

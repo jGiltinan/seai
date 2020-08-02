@@ -1,3 +1,13 @@
+```diff
+- Important notes:
+- Currently, this repository is based on Reveal.js 3.9.0.
+- Reveal.js 4.0.0 has been released with some breaking changes. 
+- Not all plugins provided here have (yet) been tested for the latest Reveal.js version. 
+- It is the goal to update this repository to the latest version as soon as possible (until Fall). 
+- Maintaining this project is a one-man show and updating may require some time. 
+- Feedback on (broken) compatibility with the latest Reveal.js version is highly appreciated.
+```
+
 # reveal.js-plugins
 
 This is a collection of plugins for [Reveal.js](https://github.com/hakimel/reveal.js) - a framework for easily creating beautiful presentations using HTML. Example presentations and demos for these plugins can be found and added [here](https://github.com/rajgoel/reveal.js-plugins/wiki/Example-presentations).
@@ -10,7 +20,7 @@ This collections includes the following plugins:
 - [Chalkboard](https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard) ([Demo](https://rajgoel.github.io/reveal.js-demos/chalkboard-demo.html)):
  A plugin adding a chalkboard and slide annotation.
 - [Chart](https://github.com/rajgoel/reveal.js-plugins/tree/master/chart) ([Demo](https://rajgoel.github.io/reveal.js-demos/chart-demo.html)):
- A plugin for using Chart.js v2.0. 
+ A plugin for using Chart.js. 
 - [Custom controls](https://github.com/rajgoel/reveal.js-plugins/tree/master/customcontrols) ([Demo](https://rajgoel.github.io/reveal.js-demos/customcontrols-demo.html)): 
  A plugin for customization of controls.
 - [Embed tweet](https://github.com/rajgoel/reveal.js-plugins/tree/master/embed-tweet) ([Demo](https://rajgoel.github.io/reveal.js-demos/embed-tweet-demo.html)):

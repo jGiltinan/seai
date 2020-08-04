@@ -89,8 +89,9 @@ If you can hear me, open the participant panel in Zoom and check "yes"
 </script></section><section data-markdown><script type="text/template">
 ![Screenshot of Temi transcription service](temi.png)
 
-<aside class="notes"><p>Highlights challenging fragments. Can see what users fix inplace to correct. Star rating for feedback.</p>
-</aside></script></section><section data-markdown><script type="text/template">
+
+
+</script></section><section data-markdown><script type="text/template">
 # Syllabus and Class Structure
 
 17-445/17-645, Summer 2020, 12 units
@@ -183,8 +184,9 @@ From guarantees to best effort...
 
 **For design, implementation, testing, deployment, operations?**
 
+</script></section><section data-markdown><script type="text/template"># Homework 1: Case Study
 
-
+Engineering issues in detecting malicous apps
 </script></section></section><section ><section data-markdown><script type="text/template">
 
 # Artificial Intelligence for Software Engineers 
@@ -388,9 +390,7 @@ Change hyperparameter to detect training accuracy (blue)/validation accuracy (re
 **[demo time](https://github.com/ckaestne/seai/tree/S2020/lectures/02_aibasics1/extras/decisiontree)**
 
 
-<aside class="notes"><p>Overfitting is recognizable when performance of the evaluation set decreases.</p>
-<p>Demo: Show how trees at different depth first improve accuracy on both sets and at some point reduce validation accuracy with small improvements in training accuracy</p>
-</aside></script></section><section data-markdown><script type="text/template">## Academic Escalation: Overfitting on Benchmarks
+</script></section><section data-markdown><script type="text/template">## Academic Escalation: Overfitting on Benchmarks
 
 
 [![Overfitting Benchmarks](overfitting-benchmarks.png)](overfitting-benchmarks.png)
@@ -421,18 +421,7 @@ Graphic: Amershi, Saleema, Andrew Begel, Christian Bird, Robert DeLine, Harald G
 (CC BY-SA 4.0, [Lakeworks](https://en.wikipedia.org/wiki/Scrum_(software_development)#/media/File:Scrum_process.svg))
 <!-- colend -->
 
-<aside class="notes"><p>There is similarity in that there is an iterative process, 
-but the idea is different and the process model seems mostly orthogonal
-to iteration in data science.
-The spiral model prioritizes risk, especially when it is not clear
-whether a model is feasible. One can do similar things in model development, seeing whether it is feasible with data at hand at all and build an early
-prototype, but it is not clear that an initial okay model can be improved
-incrementally into a great one later.
-Agile can work with vague and changing requirements, but that again seems
-to be a rather orthogonal concern. Requirements on the product are not so
-much unclear or changing (the goal is often clear), but it&#39;s not clear
-whether and how a model can solve it.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Data Science is Iterative and Exploratory
+</script></section><section data-markdown><script type="text/template">## Data Science is Iterative and Exploratory
 
 [![Experimental results showing incremental accuracy improvement](accuracy-improvements.png)](accuracy-improvements.png)
 <!-- .element: class="stretch" -->
@@ -440,8 +429,10 @@ whether and how a model can solve it.</p>
 
 Source: Patel, Kayur, James Fogarty, James A. Landay, and Beverly Harrison. "[Investigating statistical machine learning as a tool for software development](http://www.kayur.org/papers/chi2008.pdf)." In Proc. CHI, 2008.
 
-<aside class="notes"><p>This figure shows the result from a controlled experiment in which participants had 2 sessions of 2h each to build a model. Whenever the participants evaluated a model in the process, the accuracy is recorded. These plots show the accuracy improvements over time, showing how data scientists make incremental improvements through frequent iteration.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Computational Notebooks
+
+
+ 
+</script></section><section data-markdown><script type="text/template">## Computational Notebooks
 
 <!-- colstart -->
 
@@ -460,11 +451,8 @@ Source: Patel, Kayur, James Fogarty, James A. Landay, and Beverly Harrison. "[In
 
 <!-- colend -->
 
-<aside class="notes"><ul>
-<li>See also <a href="https://en.wikipedia.org/wiki/Literate_programming">https://en.wikipedia.org/wiki/Literate_programming</a></li>
-<li>Demo with public notebook, e.g., <a href="https://colab.research.google.com/notebooks/mlcc/intro_to_pandas.ipynb">https://colab.research.google.com/notebooks/mlcc/intro_to_pandas.ipynb</a></li>
-</ul>
-</aside></script></section></section><section ><section data-markdown><script type="text/template">
+
+</script></section></section><section ><section data-markdown><script type="text/template">
 # Artificial Intelligence for Software Engineers
 
 (Part 2: Deep Learning, Symbolic AI)
@@ -514,8 +502,7 @@ Deep Learning:
 > specific learning technique based on neural networks
 
 
-<aside class="notes"><p>Precise definitions are difficult to capture. Some simply describe AI as &quot;everything that&#39;s hard in computer science&quot;.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Artificial Intelligence
+</script></section><section data-markdown><script type="text/template">## Artificial Intelligence
 
 <!-- colstart -->
 
@@ -559,9 +546,7 @@ Russel and Norvig. "[Artificial Intelligence: A Modern Approach](https://cmu.pri
 <!-- .element: class="stretch" -->
 
 
-<aside class="notes"><p>Artificial neural networks are inspired by how biological neural networks work (&quot;groups of chemically connected or functionally associated neurons&quot; with synapses forming connections)</p>
-<p>From &quot;Texture of the Nervous System of Man and the Vertebrates&quot; by Santiago Ramón y Cajal, via <a href="https://en.wikipedia.org/wiki/Neural_circuit#/media/File:Cajal_actx_inter.jpg">https://en.wikipedia.org/wiki/Neural_circuit#/media/File:Cajal_actx_inter.jpg</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## Threshold Logic Unit / Perceptron
+</script></section><section data-markdown><script type="text/template">## Threshold Logic Unit / Perceptron
 
 computing weighted sum of inputs + step function
 
@@ -650,9 +635,7 @@ println("Probability of Alice smoking: " +
         alg.probability(alice.smokes, true))
 ```
 
-<aside class="notes"><p>Discussed in tutorial: <a href="https://www.cra.com/sites/default/files/pdf/Figaro_Tutorial.pdf">https://www.cra.com/sites/default/files/pdf/Figaro_Tutorial.pdf</a></p>
-<p>Source: <a href="https://github.com/p2t2/figaro/blob/master/FigaroExamples/src/main/scala/com/cra/figaro/example/Smokers.scala">https://github.com/p2t2/figaro/blob/master/FigaroExamples/src/main/scala/com/cra/figaro/example/Smokers.scala</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## Probabilistic Inference
+</script></section><section data-markdown><script type="text/template">## Probabilistic Inference
 
 Answering queries about probabilistic models
 
@@ -669,6 +652,11 @@ println("Probability of Alice smoking: " +
 * Analytical probabilistic reasoning (e.g., variable elimination Bayes' rule) -- precise result, guarantees
 * Approximation (e.g., belief propagation)
 * Sampling (e.g., Markov chain Monte Carlo) -- probabilistic guarantees
+
+</script></section><section data-markdown><script type="text/template"># Homework 2: Modeling Basics
+
+Predicting Movie Popularity (2 weeks)
+
 </script></section></section><section ><section data-markdown><script type="text/template">
 # Model Quality
 
@@ -709,8 +697,7 @@ correct answer were known” (Weyuker, 1982).
 ![MRI](mri.jpg)
 <!-- .element: class="stretch" -->
 
-<aside class="notes"><p>Application to be used in hospitals to screen for cancer, both as routine preventative measure and in cases of specific suspicions. Supposed to work together with physicians, not replace.</p>
-</aside></script></section><section data-markdown><script type="text/template">## The Systems Perspective
+</script></section><section data-markdown><script type="text/template">## The Systems Perspective
 
 System is more than the model
 
@@ -807,9 +794,8 @@ False positives: wrong prediction, false alarm, Type I error
 
 <!-- colend -->
 
-<aside class="notes"><p>Individual false positive/negative classifications can be derived
-by focusing on a single value in a confusion matrix. False positives/recall/etc are always considered with regard to a single specific outcome.</p>
-</aside></script></section><section data-markdown><script type="text/template">
+
+</script></section><section data-markdown><script type="text/template">
 [![Recall/Precision visualization](recallprecision.png)](https://en.wikipedia.org/wiki/Precision_and_recall#/media/File:Precisionrecall.svg)
 <!-- .element: class="stretch" -->
 
@@ -832,8 +818,8 @@ No answer vs wrong answer?
 
 (CC BY-SA 3.0 by [BOR](https://en.wikipedia.org/wiki/Receiver_operating_characteristic#/media/File:Roccurves.png))
 
-<aside class="notes"><p>Same concept, but plotting TPR (recall) against FPR rather than precision. Graphs closer to the top-left corner are better. Again, the area under the (ROC) curve can be measured to get a single number for comparison.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Comparing Predicted and Expected Outcomes
+
+</script></section><section data-markdown><script type="text/template">## Comparing Predicted and Expected Outcomes
 
 <!-- colstart -->
 
@@ -989,9 +975,7 @@ see also https://medium.com/@ckaestne/machine-learning-is-requirements-engineeri
 
 ![Machine Learning Validation vs Verification](mlvalidation.png)
 
-
-<aside class="notes"><p>see explanation at <a href="https://medium.com/@ckaestne/machine-learning-is-requirements-engineering-8957aee55ef4">https://medium.com/@ckaestne/machine-learning-is-requirements-engineering-8957aee55ef4</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## Example and Discussion
+</script></section><section data-markdown><script type="text/template">## Example and Discussion
 
 ```
 IF age between 18–20 and sex is male THEN predict arrest
@@ -1026,8 +1010,8 @@ Implementation is trivial/automatically generated
 ![Temporal dependence](temporaldependence.svg)
 <!-- .element: class="stretch" -->
 
-<aside class="notes"><p>The curve is the real trend, red points are training data, green points are validation data. If validation data is randomly selected, it is much easier to predict, because the trends around it are known.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Not All Inputs are Equal
+
+</script></section><section data-markdown><script type="text/template">## Not All Inputs are Equal
 
 ![Google Home](googlehome.jpg)
 <!-- .element: class="stretch" -->
@@ -1175,10 +1159,7 @@ Christian Kaestner
 
 https://www.temi.com/
 
-<aside class="notes"><p>A model is very central to this service. Product built around
-a model. Still, lots of nonmodel code for UI, storage of customer data,
-credit card processing, ...</p>
-</aside></script></section><section data-markdown><script type="text/template">## Microsoft Powerpoint
+</script></section><section data-markdown><script type="text/template">## Microsoft Powerpoint
 
 ![Powerpoint screenshot with slide designer](powerpoint.png)
 <!-- .element: class="stretch" -->
@@ -1186,9 +1167,8 @@ credit card processing, ...</p>
 Read more: [How Azure Machine Learning enables PowerPoint Designer](https://azure.microsoft.com/en-us/blog/how-azure-machine-learning-enables-powerpoint-designer/), Azure Blog, March 2020
 
 
-<aside class="notes"><p>Traditional application that uses machine learning in a few smaller
-places (more and more these days).</p>
-</aside></script></section><section data-markdown><script type="text/template">## Fall Detection Devices
+
+</script></section><section data-markdown><script type="text/template">## Fall Detection Devices
 
 ![Smart watch](smartwatch.jpg)
 <!-- .element: class="stretch" -->
@@ -1197,16 +1177,18 @@ places (more and more these days).</p>
 
 Read more: [How fall detection is moving beyond the pendant](https://www.mobihealthnews.com/content/how-fall-detection-moving-beyond-pendant), MobiHealthNews, 2019
 
-<aside class="notes"><p>Devices for older adults to detect falls and alert caretaker or emergency responders automatically or after interaction. Uses various inputs to detect falls.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Google Add Fraud Detection
+
+</script></section><section data-markdown><script type="text/template">## Google Add Fraud Detection
 
 ![System Architecture of Google's Malicious Ads Detection System](adsfraud.png)
 <!-- .element: class="stretch" -->
 
 From: Sculley, D., M. Otey, M. Pohl, B. Spitznagel, J. Hainsworth, and Y. Zhou. Detecting Adversarial Advertisements in the Wild. In Proc. KDD, 2011.
 
-<aside class="notes"><p>See first homework assignment. System largely build around a model for a specific purpose but integrated into larger infrastructure.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Thinking about Systems
+
+
+
+</script></section><section data-markdown><script type="text/template">## Thinking about Systems
 
 * Holistic approach, looking at the larger picture, involving all stakeholders
 * Looking at relationships and interactions among components and environments
@@ -1300,9 +1282,7 @@ This was 2015; many of those boxes are getting increasingly standardized these d
 Graphic from Sculley, et al. "[Hidden technical debt in machine learning systems](http://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)." In Proc NIPS, 2015.
 
 
-<aside class="notes"><p>Even for a single ML component and it&#39;s pipeline, there is a lot of
-infrastructure to build and serve the model.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Thinking in Pipelines over Models
+</script></section><section data-markdown><script type="text/template">## Thinking in Pipelines over Models
 
 * In production systems, models need to be deployed and updated
 * Consider the entire pipeline, not just the model
@@ -1353,8 +1333,7 @@ Suggested complementary reading: 🕮 Ajay Agrawal, Joshua Gans, Avi Goldfarb. �
 
 **Examples?**
 
-<aside class="notes"><p>Accounting systems, inventory tracking, physics simulations, safety railguards, fly-by-wire</p>
-</aside></script></section><section data-markdown><script type="text/template">## Discussion: Spotify
+</script></section><section data-markdown><script type="text/template">## Discussion: Spotify
 
 *Big problem? Open ended? Time changing? Hard? Partial system viable? Data continuously available? Influence objectives? Cost effective?*
 
@@ -1383,22 +1362,17 @@ May now use more predictions than before
 
 <!-- colend -->
 
-<aside class="notes"><p>May use new, cheaper predictions for traditional tasks -&gt; inventory and demand forcast; May now use predictions for new kinds of problems -&gt; navigation and translation</p>
-</aside></script></section><section data-markdown><script type="text/template">## Predicting the Best Route
+</script></section><section data-markdown><script type="text/template">## Predicting the Best Route
 
 ![Taxi in London](taxi.jpg)
 <!-- .element: class="stretch" -->
 
-<aside class="notes"><p>Cab drivers in London invested 3 years to learn streets to predict the fasted route. Navigation tools get close or better at low cost per prediction. While drivers&#39; skills don&#39;t degrade, they now compete with many others that use AI to enhance skills; human prediction no longer scarce commodity.</p>
-<p>At the same time, the value of human judgement increases. Making more decisions with better inputs, specifying the objective.</p>
-<p>Picture source: <a href="https://pixabay.com/photos/cab-oldtimer-taxi-car-city-london-203486/">https://pixabay.com/photos/cab-oldtimer-taxi-car-city-london-203486/</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## Automation in Controlled Environments
+</script></section><section data-markdown><script type="text/template">## Automation in Controlled Environments
 
 ![Trucks in a Mine](mine.jpg)
 
 
-<aside class="notes"><p>Source <a href="https://pixabay.com/photos/truck-giant-weight-mine-minerals-5095088/">https://pixabay.com/photos/truck-giant-weight-mine-minerals-5095088/</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## The Cost and Value of Data
+</script></section><section data-markdown><script type="text/template">## The Cost and Value of Data
 
 * (1) Data for training, (2) input data for decisions, (3) telemetry data for continued improving
 * Collecting and storing data can be costly (direct and indirect costs, including reputation/privacy)
@@ -1576,8 +1550,7 @@ Beyond prediction accuracy, what qualities may be relevant for an AI component?
 
 <!-- discussion -->
 
-<aside class="notes"><p>Collect qualities on whiteboard</p>
-</aside></script></section><section data-markdown><script type="text/template">## Examples of Qualities to Consider
+</script></section><section data-markdown><script type="text/template">## Examples of Qualities to Consider
 
 * Accuracy
 * Correctness guarantees? Probabilistic guarantees (--> symbolic AI)
@@ -1700,6 +1673,16 @@ Netflix Technology Blog (2012)
 Bloom & Brink. [Overcoming the Barriers to Production-Ready Machine Learning
 Workflows](https://conferences.oreilly.com/strata/strata2014/public/schedule/detail/32314), Presentation at O'Reilly Strata Conference (2014).
 
+</script></section><section data-markdown><script type="text/template"># Homework 3: Tradeoff Analysis
+
+Compare 3 learning techniques
+
+(10 qualities, metrics, measurement, memo)
+
+
+
+
+
 </script></section></section><section ><section data-markdown><script type="text/template">
 
 # Risk and Planning for Mistakes
@@ -1756,13 +1739,14 @@ CV -->|causal| IV
 
 ![CT Scan Image](ctscan.jpg)
 
-<aside class="notes"><p>ML algorithms may pick up on things that do not relate to the task but correlate with the outcome or hidden human inputs. For example, in cancer prediction, ML models have picked up on the kind of scanner used, learning that mobile scanners were used for particularly sick patients who could not be moved to the large installed scanners in a different part of the hospital.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Reverse Causality
+
+</script></section><section data-markdown><script type="text/template">## Reverse Causality
 
 ![Chess](chess.jpg)
 
-<aside class="notes"><p>(from Prediction Machines, Chapter 6) Early 1980s chess  program learned from Grandmaster games, learned that sacrificing queen would be a winning move, because it was occuring frequently in winning games. Program then started to sacrifice queen early.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Other Issues
+
+
+</script></section><section data-markdown><script type="text/template">## Other Issues
 
 * Insufficient training data
 * Noisy training data
@@ -1828,15 +1812,13 @@ Alternative paths: symbolic reasoning, interpretable models, and restricting pre
 
 **Examples?**
 
-<aside class="notes"><p>Cancer prediction, sentencing + recidivism, Tesla autopilot, military &quot;kill&quot; decisions, powerpoint design suggestions</p>
-</aside></script></section><section data-markdown><script type="text/template">## Undoable Actions
+</script></section><section data-markdown><script type="text/template">## Undoable Actions
 
 *Design system to reduce consequence of wrong predictions, allowing humans to override/undo*
 
 **Examples?**
 
-<aside class="notes"><p>Smart home devices, credit card applications, Powerpoint design suggestions</p>
-</aside></script></section><section data-markdown><script type="text/template">## Review Interpretable Models
+</script></section><section data-markdown><script type="text/template">## Review Interpretable Models
 
 *Use interpretable machine learning and have humans review the rules*
 
@@ -1956,14 +1938,8 @@ m --> Implementation
 
 ![twitter](twitter.png)
 
-<aside class="notes"><p>Source and additional reading: Raffi. <a href="https://blog.twitter.com/engineering/en_us/a/2013/new-tweets-per-second-record-and-how.html">New Tweets per second record, and how!</a> Twitter Blog, 2013</p>
-</aside></script></section><section data-markdown><script type="text/template">![](pgh.png)
-<aside class="notes"><p>Map of Pittsburgh. Abstraction for navigation with cars.</p>
-</aside></script></section><section data-markdown><script type="text/template">![](pgh-cycling.png)
-<aside class="notes"><p>Cycling map of Pittsburgh. Abstraction for navigation with bikes and walking.</p>
-</aside></script></section><section data-markdown><script type="text/template">![](pgh-firezones.png)
-<aside class="notes"><p>Fire zones of Pittsburgh. Various use cases, e.g., for city planners.</p>
-</aside></script></section><section data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">![](pgh.png)</script></section><section data-markdown><script type="text/template">![](pgh-cycling.png)</script></section><section data-markdown><script type="text/template">![](pgh-firezones.png)
+</script></section><section data-markdown><script type="text/template">
 ## What can we reason about?
 
 ![](gfs.png)
@@ -1971,8 +1947,9 @@ m --> Implementation
 <!-- references -->
 Ghemawat, Sanjay, Howard Gobioff, and Shun-Tak Leung. "[The Google file system.](https://ai.google/research/pubs/pub51.pdf)" ACM SIGOPS operating systems review. Vol. 37. No. 5. ACM, 2003.
 
-<aside class="notes"><p>Scalability through redundancy and replication; reliability wrt to single points of failure; performance on edges; cost</p>
-</aside></script></section><section data-markdown><script type="text/template">
+
+
+</script></section><section data-markdown><script type="text/template">
 # Case Study: Augmented Reality Translation
 
 
@@ -1980,8 +1957,7 @@ Ghemawat, Sanjay, Howard Gobioff, and Shun-Tak Leung. "[The Google file system.]
 <!-- .element: class="stretch" -->
 
 
-<aside class="notes"><p>Image: <a href="https://pixabay.com/photos/nightlife-republic-of-korea-jongno-2162772/">https://pixabay.com/photos/nightlife-republic-of-korea-jongno-2162772/</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## Where Should the Model Live?
+</script></section><section data-markdown><script type="text/template">## Where Should the Model Live?
 
 * Glasses
 * Phone
@@ -1992,8 +1968,8 @@ What qualities are relevant for the decision?
 <!-- split -->
 ![](googletranslate.png)
 
-<aside class="notes"><p>Trigger initial discussion</p>
-</aside></script></section><section data-markdown><script type="text/template">## When would one use the following designs?
+
+</script></section><section data-markdown><script type="text/template">## When would one use the following designs?
 
 * Static intelligence in the product
 * Client-side intelligence
@@ -2002,38 +1978,7 @@ What qualities are relevant for the decision?
 * Hybrid models
 
 
-<aside class="notes"><p>From the reading:</p>
-<ul>
-<li>Static intelligence in the product<ul>
-<li>difficult to update</li>
-<li>good execution latency</li>
-<li>cheap operation</li>
-<li>offline operation</li>
-<li>no telemetry to evaluate and improve</li>
-</ul>
-</li>
-<li>Client-side intelligence<ul>
-<li>updates costly/slow, out of sync problems</li>
-<li>complexity in clients</li>
-<li>offline operation, low execution latency</li>
-</ul>
-</li>
-<li>Server-centric intelligence<ul>
-<li>latency in model execution (remote calls)</li>
-<li>easy to update and experiment</li>
-<li>operation cost</li>
-<li>no offline operation</li>
-</ul>
-</li>
-<li>Back-end cached intelligence<ul>
-<li>precomputed common results</li>
-<li>fast execution, partial offline </li>
-<li>saves bandwidth, complicated updates</li>
-</ul>
-</li>
-<li>Hybrid models</li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template">## Telemetry Tradeoffs
+</script></section><section data-markdown><script type="text/template">## Telemetry Tradeoffs
 
 What data to collect? How much? When?
 
@@ -2041,10 +1986,15 @@ Estimate data volume and possible bottlenecks in system.
 
 ![](googletranslate.png)
 
-<aside class="notes"><p>Discuss alternatives and their tradeoffs. Draw models as suitable.</p>
-<p>Some data for context:
-Full-screen png screenshot on Pixel 2 phone (1080x1920) is about 2mb (2 megapixel); Google glasses had a 5 megapixel camera and a 640x360 pixel screen, 16gb of storage, 2gb of RAM. Cellar cost are about $10/GB.</p>
-</aside></script></section><section data-markdown><script type="text/template"># Architectural Decision: Updating Models
+
+
+
+
+
+
+
+
+</script></section><section data-markdown><script type="text/template"># Architectural Decision: Updating Models
 
 * Design for change!
 * Models are rarely static outside the lab
@@ -2085,6 +2035,11 @@ Full-screen png screenshot on Pixel 2 phone (1080x1920) is about 2mb (2 megapixe
 ![Azure AI Platform](azure.png)
 
 
+</script></section><section data-markdown><script type="text/template"># Homework 4: Requirements and Architecture
+
+Smart dashcam to detect missing children
+
+(Goals, risks, deployment alternatives, telemetry)
 
 </script></section></section><section ><section data-markdown><script type="text/template">
 # Quality Assessment in Production
@@ -2122,14 +2077,10 @@ Suggested Reading: Georgi Georgiev. “[Statistical Significance in A/B Testing 
 <!-- split -->
 ![Skype report problem button](skype2.jpg)
 
-<aside class="notes"><p>Expect only sparse feedback and expect negative feedback over-proportionally</p>
-</aside></script></section><section data-markdown><script type="text/template">![Flight cost forcast](flightforcast.jpg)
+</script></section><section data-markdown><script type="text/template">![Flight cost forcast](flightforcast.jpg)
+</script></section><section data-markdown><script type="text/template">![Temi Transcription Service Editor](temi.png)
 
-<aside class="notes"><p>Can just wait 7 days to see actual outcome for all predictions</p>
-</aside></script></section><section data-markdown><script type="text/template">![Temi Transcription Service Editor](temi.png)
-
-<aside class="notes"><p>Clever UI design allows users to edit transcripts. UI already highlights low-confidence words, can</p>
-</aside></script></section><section data-markdown><script type="text/template">![Grafana Dashboard](grafanadashboard.png)
+</script></section><section data-markdown><script type="text/template">![Grafana Dashboard](grafanadashboard.png)
 </script></section><section data-markdown><script type="text/template">## Engineering Challenges for Telemetry
 ![Amazon news story](alexa.png)
 </script></section><section data-markdown><script type="text/template">## Exercise: Design Telemetry in Production
@@ -2148,8 +2099,8 @@ Discuss: Quality measure, telemetry, operationalization, false positives/negativ
 
 ![A/B test example](ab-groove.jpg)
 
-<aside class="notes"><p>Picture source: <a href="https://www.designforfounders.com/ab-testing-examples/">https://www.designforfounders.com/ab-testing-examples/</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## Feature Flags
+
+</script></section><section data-markdown><script type="text/template">## Feature Flags
 
 ```java
 if (features.enabled(userId, "one_click_checkout") {
@@ -2220,6 +2171,10 @@ if (features.enabled(userId, "one_click_checkout") {
 Distinct roles and expertise, but joint responsibilities, joint tooling
 
 
+</script></section><section data-markdown><script type="text/template"># Project M1: Recommendation Deployment
+
+
+(recommendation service, web API, team reflection)
 
 
 </script></section></section><section ><section data-markdown><script type="text/template">
@@ -2415,14 +2370,7 @@ Further readings: Hynes, Nick, D. Sculley, and Michael Terry. [The data linter: 
 
 **how to fix?**
 
-<aside class="notes"><ul>
-<li>fix1: retrain with new training data or relabeled old training data<ul>
-<li>fix2: retrain with new data</li>
-<li>fix3: fix pipeline, retrain entirely</li>
-</ul>
-</li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template">## Watch for Degradation in Prediction Accuracy
+</script></section><section data-markdown><script type="text/template">## Watch for Degradation in Prediction Accuracy
 
 ![Model Drift](model_drift.jpg)
 
@@ -2460,9 +2408,8 @@ Generative model used to provide *probabilistic* training labels. *Discriminativ
 https://www.snorkel.org/, https://www.snorkel.org/blog/snorkel-programming; 
 Ratner, Alexander, et al. "[Snorkel: rapid training data creation with weak supervision](https://link.springer.com/article/10.1007/s00778-019-00552-1)." The VLDB Journal 29.2 (2020): 709-730.
 
-<aside class="notes"><p>Emphasize the two different models. One could just let all labelers vote, but generative model identifies common correlations and disagreements and judges which labelers to trust when (also provides feedback to label function authors), resulting in better labels.</p>
-<p>The generative model could already make predictions, but it is coupled tightly to the labeling functions. The discriminative model is a traditional model learned on labeled training data and thus (hopefully) generalizes beyond the labeling functions. It may actually pick up on very different signals. Typically this is more general and robust for unseen data.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Data Programming Beyond Labeling Training Data
+
+</script></section><section data-markdown><script type="text/template">## Data Programming Beyond Labeling Training Data
 
 * Potentially useful in many other scenarios
 * Data cleaning
@@ -2655,8 +2602,7 @@ Molham Aref "[Business Systems with Machine Learning](https://www.youtube.com/wa
 
 ![Data warehouse](datawarehouse.jpg)
 
-<aside class="notes"><p>Image source: <a href="https://commons.wikimedia.org/wiki/File:Data_Warehouse_Feeding_Data_Mart.jpg">https://commons.wikimedia.org/wiki/File:Data_Warehouse_Feeding_Data_Mart.jpg</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## Distributed Gradient Descent
+</script></section><section data-markdown><script type="text/template">## Distributed Gradient Descent
 
 [![Parameter Server](parameterserver.png)](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-li_mu.pdf)
 <!-- .element: class="stretch" -->
@@ -2666,11 +2612,7 @@ Molham Aref "[Business Systems with Machine Learning](https://www.youtube.com/wa
 [![Parameter Server](parameterserver2.png)](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-li_mu.pdf)
 <!-- .element: class="stretch" -->
 
-<aside class="notes"><p>Multiple parameter servers that each only contain a subset of the parameters, and multiple workers that each require only a subset of each</p>
-<p>Ship only relevant subsets of mathematical vectors and matrices, batch communication</p>
-<p>Resolve conflicts when multiple updates need to be integrated (sequential, eventually, bounded delay)</p>
-<p>Run more than one learning algorithm simulaneously</p>
-</aside></script></section><section data-markdown><script type="text/template">## Queuing Theory
+</script></section><section data-markdown><script type="text/template">## Queuing Theory
 
 ![Simple Queues](queuingth.png)
 </script></section><section data-markdown><script type="text/template">## Profiling 
@@ -2792,8 +2734,8 @@ Source: https://blog.octo.com/en/jenkins-quality-dashboard-ios-development/
 
 http://principlesofchaos.org
 
-<aside class="notes"><p>Chaos Engineering is the discipline of experimenting on a distributed system in order to build confidence in the system’s capability to withstand turbulent conditions in production. Pioneered at Netflix</p>
-</aside></script></section><section data-markdown><script type="text/template">
+
+</script></section><section data-markdown><script type="text/template">
 ## Case Study: Smart Phone Covid-19 Detection
 
 <iframe width="90%" height="500" src="https://www.youtube.com/embed/e62ZL3dCQWM?start=42" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -2857,8 +2799,8 @@ Eric Breck, Shanqing Cai, Eric Nielsen, Michael Salib, D. Sculley. [The ML Test 
 
 ![Flood and Fire Control](interactionflood.png)
 
-<aside class="notes"><p>Flood control and fire control work independently, but interact on the same resource (water supply), where flood control may deactivate the water supply to the sprinkler system in case of a fire</p>
-</aside></script></section><section data-markdown><script type="text/template">## ML Models for Feature Extraction
+
+</script></section><section data-markdown><script type="text/template">## ML Models for Feature Extraction
 
 *self driving car*
 
@@ -3012,6 +2954,14 @@ https://ml-ops.org/
 <!-- references -->
 Linux Foundation AI Initiative
 
+
+</script></section><section data-markdown><script type="text/template"># Homework 5: Open Source Tools
+</script></section><section data-markdown><script type="text/template">
+# Project M2: Model and Infrastructure Quality
+
+(online and offline evaluation, data quality, pipeline quality, CI)
+
+
 </script></section></section><section ><section data-markdown><script type="text/template">
 # Ethics & Fairness in AI-Enabled Systems
 
@@ -3044,8 +2994,8 @@ Matthews. "[Algorithmic Accountability: A Primer](https://datasociety.net/wp-con
 "*I could have raised it higher and made more profits for our shareholders. Which is my primary duty.*" -- Martin Shkreli
 
 
-<aside class="notes"><p>Image source: <a href="https://en.wikipedia.org/wiki/Martin_Shkreli#/media/File:Martin_Shkreli_2016.jpg">https://en.wikipedia.org/wiki/Martin_Shkreli#/media/File:Martin_Shkreli_2016.jpg</a></p>
-</aside></script></section><section data-markdown><script type="text/template">## With a few lines of code...
+
+</script></section><section data-markdown><script type="text/template">## With a few lines of code...
 
 
 [![Headline: Some airlines may be using algorithms to split up families during flights](airlines_split.png)](https://www.vox.com/the-goods/2018/11/27/18115164/airline-flying-seat-assignment-ryanair)
@@ -3071,18 +3021,14 @@ Matthews. "[Algorithmic Accountability: A Primer](https://datasociety.net/wp-con
 
 ![Automated food ordering system](automation.jpg)
 
-<aside class="notes"><p>The dangers and risks of automating jobs.</p>
-<p>Discuss issues around automated truck driving and the role of jobs.</p>
-<p>See for example: Andrew Yang. The War on Normal People. 2019</p>
-</aside></script></section><section data-markdown><script type="text/template">## Society: Polarization
+
+</script></section><section data-markdown><script type="text/template">## Society: Polarization
 
 [![Article: Facebook Executives Shut Down Efforts to Make the Site Less Divisive](facebookdivisive.png)](https://www.wsj.com/articles/facebook-knows-it-encourages-division-top-executives-nixed-solutions-11590507499)
 <!-- .element: class="stretch" -->
 
 
-<aside class="notes"><p>Recommendations for further readings: <a href="https://www.nytimes.com/column/kara-swisher">https://www.nytimes.com/column/kara-swisher</a>, <a href="https://podcasts.apple.com/us/podcast/recode-decode/id1011668648">https://podcasts.apple.com/us/podcast/recode-decode/id1011668648</a></p>
-<p>Also isolation, Cambridge Analytica, collaboration with ICE, ...</p>
-</aside></script></section><section data-markdown><script type="text/template">## Weapons, Surveillance, Suppression
+</script></section><section data-markdown><script type="text/template">## Weapons, Surveillance, Suppression
 
 <!-- colstart -->
 ![Boston Dynamics BigDog](bigdog.png)
@@ -3168,33 +3114,21 @@ human-like biases](http://cs.bath.ac.uk/~jjb/ftp/CaliskanEtAl-authors-full.pdf)_
 
 ![Image search for "CEO"](ceo.png)
 
-<aside class="notes"><p>&quot;An example of this type of bias can be found in a 2018 image search
-result where searching for women CEOs ultimately resulted in fewer female CEO images due
-to the fact that only 5% of Fortune 500 CEOs were woman—which would cause the search
-results to be biased towards male CEOs. These search results were of course reflecting
-the reality, but whether or not the search algorithms should reflect this reality is an issue worth
-considering.&quot;</p>
-</aside></script></section><section data-markdown><script type="text/template">## Tainted Examples
+
+</script></section><section data-markdown><script type="text/template">## Tainted Examples
 
 *Samples or labels reflect human bias*
 
 ![](amazon-hiring.png)
 
-<aside class="notes"><ul>
-<li>Bias in the dataset caused by humans</li>
-<li>Some labels created manually by employers</li>
-<li>Dataset &quot;tainted&quot; by biased human judgement</li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template">## Skewed Sample
+
+</script></section><section data-markdown><script type="text/template">## Skewed Sample
 
 *Crime prediction for policing strategy*
 
 ![](crime-map.jpg)
 
-<aside class="notes"><p>Initial bias in the data set, amplified 
-through feedback loop</p>
-<p>Other example: Street Bump app in Boston (2012) to detect potholes while driving favors areas with higher smartphone adoption</p>
-</aside></script></section><section data-markdown><script type="text/template">## Sample Size Disparity
+</script></section><section data-markdown><script type="text/template">## Sample Size Disparity
 
 *Less training data available for certain subpopulations*
 
@@ -3202,16 +3136,8 @@ through feedback loop</p>
 
 Example: "Shirley Card" used for color calibration
 
-<aside class="notes"><ul>
-<li>Less data available for certain parts of the population</li>
-<li>Example: &quot;Shirley Card&quot;<ul>
-<li>Used by Kodak for color calibration in photo films</li>
-<li>Most &quot;Shirley Cards&quot; used Caucasian models</li>
-<li>Poor color quality for other skin tones</li>
-</ul>
-</li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template"># Massive Potential Damage
+
+</script></section><section data-markdown><script type="text/template"># Massive Potential Damage
 
 ![Book Cover: Weapons of math destruction](weaponsmath.jpg)
 <!-- .element: class="stretch" -->
@@ -3500,7 +3426,9 @@ Mitchell, Margaret, et al. "[Model cards for model reporting](https://www.seas.u
 
 
 
+</script></section><section data-markdown><script type="text/template"># Homework 6: Fairness
 
+(credit scoring + recommendation, model + system)
 
 
 </script></section></section><section ><section data-markdown><script type="text/template">
@@ -3658,10 +3586,8 @@ Can measure how well $g$ fits $f$ with common model quality measures, typically 
 
 **Advantages? Disadvantages?**
 
-<aside class="notes"><p>Flexible, intuitive, easy approach, easy to compare quality of surrogate model with validation data ($R^2$).
-But: Insights not based on real model; unclear how well a good surrogate model needs to fit the original model; surrogate may not be equally good for all subsets of the data; illusion of interpretability.
-Why not use surrogate model to begin with?</p>
-</aside></script></section><section data-markdown><script type="text/template">## Lime Example
+
+</script></section><section data-markdown><script type="text/template">## Lime Example
 
 ![Lime Example](lime1.png)
 
@@ -3670,8 +3596,8 @@ Why not use surrogate model to begin with?</p>
 Source: 
 Christoph Molnar. "[Interpretable Machine Learning: A Guide for Making Black Box Models Explainable](https://christophm.github.io/interpretable-ml-book/)." 2019
 
-<aside class="notes"><p>Model distinguishes blue from gray area. Surrogate model learns only a while line for the nearest decision boundary, which may be good enough for local explanations.</p>
-</aside></script></section><section data-markdown><script type="text/template">## Partial Dependence Plot Example
+
+</script></section><section data-markdown><script type="text/template">## Partial Dependence Plot Example
 
 *Bike rental in DC*
 
@@ -3786,10 +3712,7 @@ Compute influence of every data point and create new model to explain influence 
 Source: 
 Christoph Molnar. "[Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)." 2019
 
-<aside class="notes"><p>Example from cancer prediction. The influence analysis tells us that the model becomes increasingly unstable when
-predicting cancer for higher ages. This means
-that errors in these instances can have a strong effect on the model.</p>
-</aside></script></section><section data-markdown><script type="text/template">![Positive example](https://pair.withgoogle.com/assets/ET1_aim-for.png)
+</script></section><section data-markdown><script type="text/template">![Positive example](https://pair.withgoogle.com/assets/ET1_aim-for.png)
 
 <!-- split -->
 ![Negative example](https://pair.withgoogle.com/assets/ET1_avoid.png)
@@ -3825,8 +3748,6 @@ Cynthia Rudin (32min) or 🗎 Rudin, Cynthia. "[Stop explaining black box machin
 
 </script></section><section data-markdown><script type="text/template">![Responsible AI website from Microsoft](responsibleai.png)
 </script></section><section data-markdown><script type="text/template">[![Forbes Article: This Is The Year Of AI Regulations](airegulation.png)](https://www.forbes.com/sites/cognitiveworld/2020/03/01/this-is-the-year-of-ai-regulations/#1ea2a84d7a81)
-
-
 </script></section></section><section ><section data-markdown><script type="text/template">
 # Versioning, Provenance, and Reproducability
 
@@ -3948,8 +3869,10 @@ Juristo, Natalia, and Omar S. Gómez. "[Replication of software engineering expe
   - Initialize random seed
 * Different library versions installed on the machine may affect results
 * (Inference for a given model is usually deterministic)
+</script></section><section data-markdown><script type="text/template">
+# Project M3: Monitoring and Continuous Deployment
 
-
+(containization, monitoring, canary releases, provenance)
 
 </script></section></section><section ><section data-markdown><script type="text/template">
 # Security, Adversarial Learning, and Privacy
@@ -4021,16 +3944,8 @@ quality
     * models trained on public data set (e.g., ImageNet)
     * retrained automatically on telemetry
 
-<aside class="notes"><ul>
-<li>Example: Anti-virus (AV) scanner<ul>
-<li>Online platform for submission of potentially malicious code<ul>
-<li>Some AV company (allegedly) poisoned competitor&#39;s model</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template">## Poisoning Attack: Integrity
+  
+</script></section><section data-markdown><script type="text/template">## Poisoning Attack: Integrity
 
 ![](spam.jpg)
 
@@ -4129,8 +4044,7 @@ From Goodfellow et al (2018). [Making machine learning robust against adversaria
 [![Article: Google Catches Bing Copying; Microsoft Says 'So What?'](wired_google.png)](https://www.wired.com/2011/02/bing-copies-google/)
 </script></section><section data-markdown><script type="text/template">[![Article: NetFlix Cancels Recommendation Contest After Privacy Lawsuit](wired_netflix.png)](https://www.wired.com/2010/03/netflix-cancels-contest/)
 
-<aside class="notes"><p>&quot;an in-the-closet lesbian mother sued Netflix for privacy invasion, alleging the movie-rental company made it possible for her to be outed when it disclosed insufficiently anonymous information about nearly half-a-million customers as part of its $1 million contest.&quot;</p>
-</aside></script></section><section data-markdown><script type="text/template">![Image recovered from a DNN](image_recovery.png)
+</script></section><section data-markdown><script type="text/template">![Image recovered from a DNN](image_recovery.png)
 
 
 <!-- references -->
@@ -4154,30 +4068,22 @@ graph LR
 [![Generated image of a woman](gan_women.jpg)](https://commons.wikimedia.org/wiki/File:Woman_2.jpg)
 <!-- .element: class="stretch" -->
 
-<aside class="notes"><ul>
-<li>Generative adversarial networks: 2 models, one producing samples and one discriminating real from generated samples<ul>
-<li>Learn data distribution of training data</li>
-<li>Produce prototypical images, e.g. private jets</li>
-<li>Deep fakes</li>
-</ul>
-</li>
-</ul>
-</aside></script></section><section data-markdown><script type="text/template"># Security at the System Level
+
+
+
+</script></section><section data-markdown><script type="text/template"># Security at the System Level
 
 *security is more than model robustness*
 
 *defenses go beyond hardening models*
 </script></section><section data-markdown><script type="text/template">![Amazon verified reviews](verifiedreviews.png)
 
-<aside class="notes"><p>Raise the price of wrong inputs</p>
-</aside></script></section><section data-markdown><script type="text/template">![Youtube Spam](youtube_spam.png)
+</script></section><section data-markdown><script type="text/template">![Youtube Spam](youtube_spam.png)
 
-<aside class="notes"><p>Reporting function helps to crowdsource detection of malicious content and potentially train a future classifier (which again can be attacked)</p>
-</aside></script></section><section data-markdown><script type="text/template">![Too many attempts warning on Android](android_login.png)
+</script></section><section data-markdown><script type="text/template">![Too many attempts warning on Android](android_login.png)
 <!-- .element: class="stretch" -->
 
-<aside class="notes"><p>Block system after login attempts with FaceID or fingerprint</p>
-</aside></script></section><section data-markdown><script type="text/template">## Architecture Diagram for Threat Modeling
+</script></section><section data-markdown><script type="text/template">## Architecture Diagram for Threat Modeling
 
 ![](admission-threat-model.jpg)
 
@@ -4311,21 +4217,7 @@ too close to other cars by exploiting certain sensor vulnerabilities so that it 
 </script></section><section data-markdown><script type="text/template">## The Uber Crash
 
 ![Uber crash](ubercrash.png)
-
-<aside class="notes"><blockquote>
-<p>investigators instead highlighted the many human errors that culminated in the death of 49-year-old Elaine Herzberg. Driver was reportedly streaming an episode of The Voice on her phone, which is in violation of Uber’s policy banning phone use. In fact, investigators determined that she had been glancing down at her phone and away from the road for over a third of the total time she had been in the car up until the moment of the crash.</p>
-</blockquote>
-<blockquote>
-<p>woefully inadequate safety culture</p>
-</blockquote>
-<blockquote>
-<p>federal government also bore its share of responsibility for failing to better regulate autonomous car operations</p>
-</blockquote>
-<blockquote>
-<p>The company also lacked a safety division and did not have a dedicated safety manager responsible for risk assessment and mitigation. In the weeks before the crash, Uber made the fateful decision to reduce the number of safety drivers in each vehicle from two to one. That decision removed important redundancy that could have helped prevent Herzberg’s death.</p>
-</blockquote>
-<p> (from <a href="https://www.theverge.com/2019/11/20/20973971/uber-self-driving-car-crash-investigation-human-error-results">https://www.theverge.com/2019/11/20/20973971/uber-self-driving-car-crash-investigation-human-error-results</a>)</p>
-</aside></script></section><section data-markdown><script type="text/template">![SAE Levels](j3016-levels-of-driving-automation-12-10.jpg)
+</script></section><section data-markdown><script type="text/template">![SAE Levels](j3016-levels-of-driving-automation-12-10.jpg)
 </script></section><section data-markdown><script type="text/template">## Safety Challenges widely Recognized
 
 ![Survey](survey.png)
@@ -4366,9 +4258,7 @@ Borg, Markus, et al. "[Safely entering the deep: A review of verification and va
 <!-- .element: class="stretch" -->
 
 
-<aside class="notes"><p>Recommendations for further readings: <a href="https://www.nytimes.com/column/kara-swisher">https://www.nytimes.com/column/kara-swisher</a>, <a href="https://podcasts.apple.com/us/podcast/recode-decode/id1011668648">https://podcasts.apple.com/us/podcast/recode-decode/id1011668648</a></p>
-<p>Also isolation, Cambridge Analytica, collaboration with ICE, ...</p>
-</aside></script></section><section data-markdown><script type="text/template">## Environmental: Energy Consumption
+</script></section><section data-markdown><script type="text/template">## Environmental: Energy Consumption
 
 [![Article: Creating an AI can be five times worse for the planet than a car](energy.png)](https://www.newscientist.com/article/2205779-creating-an-ai-can-be-five-times-worse-for-the-planet-than-a-car/)
 

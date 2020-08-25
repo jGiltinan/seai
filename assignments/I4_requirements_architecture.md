@@ -58,8 +58,7 @@ Submit a report as a single PDF file to Gradescope that covers the following top
 2. **Risks** (1.5 page max) Describe three relevant risks from wrong predictions and corresponding mitigation strategy. Explain how each mitigation strategy reduces the risk.
 3. **Analysis of deployment alternatives:** Briefly describe the fourth deployment architecture considered. Then for each of the 4 deployment options discuss the 8 qualities listed above. A tabular representation (one column per deployment option, one row per quality) may be suitable, but other clearly structured formats are possible. Rough estimates or relative ratings with a brief explanation are sufficient as long as they are grounded and realistic in the scenario.
 4. **Recommendation and justification of deployment architecture** (1 page max): Recommend a deployment architecture and justify this recommendation in terms of the relative relevance of the qualities and the tradeoffs among quality attributes.
-5. **Telemetry** (1 page max): Suggest how telemetry should be selected, describe how quality would be measured from telemetry data, and briefly justify those decisions.
-6. **Optional: Formal risk analysis:** Provide a brief description of the risk analysis process selected and how it was systematically applied. Provide supporting evidence (e.g., diagrams, tables, screenshots) of the risk analysis performed and briefly discussed insights gained from applying a method systematically, if any.
+5. **Optional: Formal risk analysis** (1 page max): Provide a brief description of the risk analysis process selected and how it was systematically applied. Provide supporting evidence (e.g., diagrams, tables, screenshots) of the risk analysis performed and briefly discussed insights gained from applying a method systematically, if any.
 
 Graphics and tables do not count against the page limit.
 
@@ -71,5 +70,4 @@ The assignment is worth 100 points. For full credit, we expect:
 * [ ] 25 points: Three risks from wrong predictions are described that are relevant in the scenario (10p). For each risk a plausible mitigation strategy is suggested and explained (15p).
 * [ ] 15 points: Description of a fourth deployment architecture is included. For each of the 4 design alternatives all 8 quality attributes are analyzed plausibly.
 * [ ] 15 points: Recommendation for a deployment decision provided and justified (10p). The justification clearly makes tradeoffs among the qualities and weighs the relative importance of the qualities (5p).
-* [ ] 20 points: Telemetry design suggested and justified (10p). Clear description of quality measures and how they can be derived from the telemetry data (5p). The justification considers the amount of data transmitted or stored, how telemetry copes with rare events, and whether telemetry can detect both false positives and false negatives (5p).
-* [ ] (optional) 10 bonus points: One risk analysis technique systematically applied to understand risks. Supporting evidence provided. Insights from applying the method discussed.
+* [ ] 20 points: One risk analysis technique systematically applied to understand risks (10p). Supporting evidence provided (5p). Insights from applying the method discussed (5p).

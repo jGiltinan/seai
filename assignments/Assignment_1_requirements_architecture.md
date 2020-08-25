@@ -1,6 +1,6 @@
-# Individual Assignment 4: Requirements and Architecture
+# Assignment 1: Requirements and Architecture
 
-(17-445/645 Software Engineering for AI-Enabled Systems)
+(ENPM 808O AI-based Software Systems)
 
 ## Overview
 

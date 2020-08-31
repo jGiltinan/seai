@@ -32,9 +32,9 @@ You are concerned at least about the following qualities:
 8. Privacy
 9. Development cost, technical complexity of the solution, maintainability
 
-## Tasks
+Think about requirements for such a system and how you would design it (no implementation needed for this assignment). What could go wrong and how could risks be mitigated? What would be the main components (AI or not), where might they be located? You will focus on four aspects: goals, system architecture, risks, and evaluation strategy.
 
-Think about requirements for such a system and how you would design it (no implementation needed for this assignment). What could go wrong and how could risks be mitigated? What would be the main components (AI or not), where might they be located? Consider alternative designs. You will focus on four aspects: goals, risks, system architecture, and evaluation strategy.
+## Tasks
 
 First, identify the goals for the new feature in the dashcam. Break down goals into *organizational objectives*, *leading indicators*, *user outcomes*, and *model properties* and provide corresponding measures you could use to assess how well you achieve the goals. Provide a brief description how goals relate to each other (e.g., “better model accuracy should help with higher user satisfaction”). Organizational objectives and leading indicators should be stated from the perspective of the company (not the partnering non-profits or authorities).  For user outcomes and model properties make clear to which users or models the goal refer; you may state different goals for different users. Your list of goals should be reasonably comprehensive and may include multiple goals at each level.
 
@@ -52,17 +52,10 @@ Define “constraints” to the dashcam design based on the research. For exampl
 Submit a report as a single PDF file to Gradescope that covers the following topics in clearly labeled sections (ideally each section starts on a new page):
 
 1. **Goals** (1 page max): Provide a list of organizational objectives, leading indicators, user outcomes, and model properties and corresponding measures. Briefly discuss how goals relate to each other.
-2. **System Context Diagram** Provide a diagram of your proposed integrated system. Briefly discuss how each component connects, and an explanation (0.5 page max)
+2. **System Context Diagram** Recommend a deployment architecture and justify this recommendation in terms of the relative relevance of the qualities and the tradeoffs among quality attributes. Provide a diagram of your proposed integrated system. Briefly discuss how each component connects, and an explanation (0.5 page max)
 3. **Risks** (1.5 page max) Describe three relevant risks from wrong predictions and corresponding mitigation strategy. Explain how each mitigation strategy reduces the risk.
 4. **Formal risk analysis** (1 page max): Provide a brief description of the risk analysis process selected and how it was systematically applied. Provide supporting evidence (e.g., diagrams, tables, screenshots) of the risk analysis performed and briefly discussed insights gained from applying the fault tree analysis method systematically.
 5. **Evaluation strategy** (1 page max):  Describe how you would evaluate your 
-
-
-
-
-4. **Analysis of deployment alternatives:** Briefly describe the fourth deployment architecture considered. Then for each of the 4 deployment options discuss the 8 qualities listed above. A tabular representation (one column per deployment option, one row per quality) may be suitable, but other clearly structured formats are possible. Rough estimates or relative ratings with a brief explanation are sufficient as long as they are grounded and realistic in the scenario.
-5. **Recommendation and justification of deployment architecture** (1 page max): Recommend a deployment architecture and justify this recommendation in terms of the relative relevance of the qualities and the tradeoffs among quality attributes.
-
 
 
 Graphics and tables do not count against the page limit.
@@ -71,14 +64,8 @@ Graphics and tables do not count against the page limit.
 ## Grading
 
 The assignment is worth 100 points. For full credit, we expect:
-* [ ] 25 points: Goals listed and correctly grouped (10p). List of goals relates to scenario and reasonable complete (5p). For each goal a metric is clearly defined that could realistically be measured in the scenario (5p). The relationship of goals is described and plausible (5p).
-* [ ] 10 points: System context diagram drawn (5p) and discussed (5p).
+* [ ] 25 points: Goals listed and correctly grouped (10p). List of goals relates to scenario and reasonably complete (5p). For each goal a metric is clearly defined that could realistically be measured in the scenario (5p). The relationship of goals is described and plausible (5p).
+* [ ] 15 points: Recommendation for a deployment decision provided and justified (10p). System context diagram drawn and reasonably complete (5p).
 * [ ] 25 points: Three risks from wrong predictions are described that are relevant in the scenario (10p). For each risk a plausible mitigation strategy is suggested and explained (15p).
 * [ ] 20 points: Fault tree analysis technique systematically applied to understand risks (10p). Supporting evidence provided (5p). Insights from applying the method discussed (5p).
 * [ ] 20 points: Evaluation strategy defined. Criteria/requirements the system design will be evaluated against are given (5p) and justified (5p). Constraints on hardware (5p) and software (5p) given and explained.
-
-
-Formerly included:
-* [ ] 15 points: Description of a fourth deployment architecture is included. For each of the 4 design alternatives all 8 quality attributes are analyzed plausibly.
-* [ ] 15 points: Recommendation for a deployment decision provided and justified (10p). The justification clearly makes tradeoffs among the qualities and weighs the relative importance of the qualities (5p).
-

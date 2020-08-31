@@ -2,15 +2,15 @@
 
 (ENPM 808O AI-based Software Systems)
 
-## Overview
+## Overview:
 
-In this assignment, you will zoom out from the AI component and think about the requirements and the architecture of a larger AI-enabled system in a concrete scenario. You may again work with a partner (optional, see below).
+In this assignment, you will zoom out from the AI component and think about the requirements and the architecture of a larger AI-enabled system in a concrete scenario. You are working for a company that wants to integrate facial recognition into their dashcams, cameras that are mounted to the front of the windshield and often as video evidence in the event of an accident. The facial recognition feature is to find missing children when an amber alert is given. The company has various models of dashcams on the market and this assignment focuses on how a facial recognition model, produced by a contractor, will be integrated into the current system and the many considerations that will have to be made.
 
-Learning goals:
+### Learning goals:
 * Analyze a system’s goals and define corresponding measures
 * Analyze risks of mistakes by AI components and design mitigation strategies
 * Reason about qualities relevant to the deployment of an AI component in a system architecture
-* Design measures to quantify system goals, design qualities, and telemetry feedback
+* Design measures to quantify system goals and design qualities
 
 ## Scenario
 
@@ -18,7 +18,7 @@ Learning goals:
 
 Assume that you are contracting out the AI component that recognizes persons in images and video to a company with extensive experience in face recognition based on deep neural networks. The contractors build on past tools and infrastructure (e.g., [Amazon Rekognition](https://aws.amazon.com/rekognition/)) but will customize one or multiple components to your needs, to the extend possible (e.g., deploying models offline would be an option). They will provide you with the infrastructure to train and serve person recognition models, which you can operate and update in-house.
 
-In designing such system, there are many considertions, such as:
+In designing such system, there are many considerations, such as:
 * Your dashcams do not have direct internet access, but they can communicate over USB, Bluetooth or Wifi with phones, cars, and wifi-hotspots.
 * The dashcams may run on battery but are usually connected to the car's power supply. Their processing power differs from model to model.
 * Searches are coordinated with the authorities and the non-profit organization. You suspect less strict requirements as for Amber alerts, but the legal details are not worked out yet. Searches are likely not very frequent in any given area. For Amber alerts, [official statistics](https://amberalert.gov/statistics.htm) report nearly 1 alert per day nationwide.

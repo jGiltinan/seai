@@ -6,12 +6,6 @@
 
 In this assignment, you will zoom out from the AI component and think about the requirements and the architecture of a larger AI-enabled system in a concrete scenario. You are working for a company that wants to integrate facial recognition into their dashcams, cameras that are mounted to the front of the windshield and often as video evidence in the event of an accident. The facial recognition feature is to find missing children when an amber alert is given. The company has various models of dashcams on the market and this assignment focuses on how a facial recognition model, produced by a contractor, will be integrated into the current system and the many considerations that will have to be made.
 
-### Learning goals:
-* Analyze a system’s goals and define corresponding measures
-* Analyze risks of mistakes by AI components and design mitigation strategies
-* Reason about qualities relevant to the deployment of an AI component in a system architecture
-* Design measures to quantify system goals and design qualities
-
 ## Scenario
 
 [Dashcams](https://en.wikipedia.org/wiki/Dashcam) are getting more popular and are broadly installed in many vehicles already. As a manufacturer of dashcams, you want to develop features that distinguish your dashcams from those of your competitors. As one project, you work with a non-profit organization on *child safety*: The project's goal is to use dashcam footage to locate children reported missing. However, instead of broadcasts, such as [Amber alerts](https://en.wikipedia.org/wiki/Amber_alert) your products will allow to search for those children in video recordings made by the dashcam.

@@ -10,7 +10,7 @@ In this assignment, you will zoom out from the AI component and think about the 
 
 [Dashcams](https://en.wikipedia.org/wiki/Dashcam) are getting more popular and are broadly installed in many vehicles already. As a manufacturer of dashcams, you want to develop features that distinguish your dashcams from those of your competitors. As one project, you work with a non-profit organization on *child safety*: The project's goal is to use dashcam footage to locate children reported missing. However, instead of broadcasts, such as [Amber alerts](https://en.wikipedia.org/wiki/Amber_alert) your products will allow to search for those children in video recordings made by the dashcam.
 
-Assume that you are contracting out the AI component that recognizes persons in images and video to a company with extensive experience in face recognition based on deep neural networks. The contractors build on past tools and infrastructure (e.g., [Amazon Rekognition](https://aws.amazon.com/rekognition/)) but will customize one or multiple components to your needs, to the extend possible (e.g., deploying models offline would be an option). They will provide you with the infrastructure to train and serve person recognition models, which you can operate and update in-house.
+Assume that you are contracting out the AI component that recognizes persons in images and video to a company with extensive experience in face recognition based on deep neural networks. The contractors can build on past tools and infrastructure (e.g., [Amazon Rekognition](https://aws.amazon.com/rekognition/)) but will customize one or multiple components to your needs, to the extend possible (e.g., deploying models offline would be an option). They will provide you with the infrastructure to train and serve person recognition models, which you can operate and update in-house.
 
 In designing such system, there are many considerations, such as:
 * Your dashcams do not have direct internet access, but they can communicate over USB, Bluetooth or Wifi with phones, cars, and wifi-hotspots.
@@ -25,11 +25,12 @@ You are concerned at least about the following qualities:
 1. Latency between reporting a child missing (with numerous pictures) to receiving potential matches from dashcam users
 2. Number of false positives and false negatives
 3. Ability to observe how well the system works in production
-4. Scalability and cost of running the infrastructure with many users across many countries
-5. Operating costs for users
-6. Difficulty of changing and updating the system to meet new requirements or incorporate better technology
-7. Privacy
-8. Development cost, technical complexity of the solution, maintainability
+4. Users can be casual drivers, frequent drivers, commercial freight, and others, each of which may have different dashcam models and expectations of their user experience
+5. Scalability and cost of running the infrastructure with many users across many states/countries
+6. Operating costs for users
+7. Difficulty of changing and updating the system to meet new requirements or incorporate better technology
+8. Privacy
+9. Development cost, technical complexity of the solution, maintainability
 
 ## Tasks
 

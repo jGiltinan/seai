@@ -1,10 +1,10 @@
-# Individual Assignment 2: Modeling Basics
+# Assignment 2: Modeling Basics
 
-(17-445/645 Software Engineering for AI-Enabled Systems)
+(ENPM 808O AI-based Software Systems)
 
 ## Overview
 
-This assignment is intended as a warmup to get familiar with the basics of machine learning tools and the challenges involved in gathering data. This assignment will use data from a Netflix-like movie streaming service.
+This assignment is intended to get you familiar with the basics of machine learning tools and the challenges involved in gathering data. This assignment will use data from a Netflix-like movie streaming service.
 
 Learning goals:
 * Collect data from multiple sources and engineer features for learning

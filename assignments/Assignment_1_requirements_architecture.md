@@ -47,7 +47,7 @@ Fourth, think about risks based on wrong predictions by the image recognition co
 
 ## Deliverable
 
-Submit a report as a single PDF file to Gradescope that covers the following topics in clearly labeled sections (ideally each section starts on a new page):
+Submit a report as a single PDF file that covers the following topics in clearly labeled sections (ideally each section starts on a new page):
 
 1. **Goals** (1 page max): Provide a list of organizational objectives, leading indicators, user outcomes, and model properties and corresponding measures. Briefly discuss how goals relate to each other.
 2. **System Architecture** Recommend a deployment architecture and justify this recommendation in terms of the relative relevance of the qualities and the tradeoffs among quality attributes. Provide a diagram of your proposed integrated system. Briefly discuss how each component connects, and an explanation (0.5 page max)

@@ -34,7 +34,7 @@ You are concerned at least about the following qualities:
 
 ## Tasks
 
-Think about requirements for such a system and how you would design it (no implementation needed for this assignment). What could go wrong and how could risks be mitigated? What would be the main components (AI or not), where might they be located? Consider alternative designs. You will focus on four aspects: goals, risks, deployment architecture, and telemetry.
+Think about requirements for such a system and how you would design it (no implementation needed for this assignment). What could go wrong and how could risks be mitigated? What would be the main components (AI or not), where might they be located? Consider alternative designs. You will focus on four aspects: goals, risks, system architecture, and evaluation strategy.
 
 First, identify the goals for the new feature in the dashcam. Break down goals into *organizational objectives*, *leading indicators*, *user outcomes*, and *model properties* and provide corresponding measures you could use to assess how well you achieve the goals. Provide a brief description how goals relate to each other (e.g., “better model accuracy should help with higher user satisfaction”). Organizational objectives and leading indicators should be stated from the perspective of the company (not the partnering non-profits or authorities).  For user outcomes and model properties make clear to which users or models the goal refer; you may state different goals for different users. Your list of goals should be reasonably comprehensive and may include multiple goals at each level.
 

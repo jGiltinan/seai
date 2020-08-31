@@ -65,5 +65,5 @@ The assignment is worth 100 points. For full credit, we expect:
 * [ ] 25 points: Goals listed and correctly grouped (10p). List of goals relates to scenario and reasonably complete (5p). For each goal a metric is clearly defined that could realistically be measured in the scenario (5p). The relationship of goals is described and plausible (5p).
 * [ ] 15 points: Recommendation for a deployment decision provided and justified (10p). System context diagram drawn and reasonably complete (5p).
 * [ ] 20 points: Evaluation strategy defined. Criteria/requirements the system design will be evaluated against are given (5p) and justified (5p). Constraints on hardware (5p) and software (5p) given and explained.
-* [ ] 25 points: Three risks from wrong predictions are described that are relevant in the scenario (10p). For each risk a plausible mitigation strategy is suggested and explained (15p).
+* [ ] 20 points: Three risks from wrong predictions are described that are relevant in the scenario (10p). For each risk a plausible mitigation strategy is suggested and explained (10p).
 * [ ] 20 points: Fault tree analysis technique systematically applied to understand risks (10p). Supporting evidence provided (5p). Insights from applying the method discussed (5p).

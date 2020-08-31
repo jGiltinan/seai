@@ -78,7 +78,7 @@ The assignment is worth 100 points. For full credit, we expect:
 * [ ] 20 points: Evaluation strategy defined. Criteria/requirements the system design will be evaluated against are given (5p) and justified (5p). Constraints on hardware (5p) and software (5p) given and explained.
 
 
-
+Formerly included:
 * [ ] 15 points: Description of a fourth deployment architecture is included. For each of the 4 design alternatives all 8 quality attributes are analyzed plausibly.
 * [ ] 15 points: Recommendation for a deployment decision provided and justified (10p). The justification clearly makes tradeoffs among the qualities and weighs the relative importance of the qualities (5p).
 

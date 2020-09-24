@@ -1,4 +1,4 @@
-# Assignment 2: Modeling Basics
+# Assignment 3: Modeling Basics
 
 (ENPM 808O AI-based Software Systems)
 
@@ -13,11 +13,21 @@ Learning goals:
 
 ## Tasks
 
-Consider you are in the early days of video streaming and are building a Netflix-like streaming business with a massive catalog of movies. Currently, the service has one million users and about 27.000 movies. We will focus on recommending movies later, but in this assignment, the goal is to predict the expected popularity of movies to plan movie acquisitions and royalty payments. That is, you want to predict for a given movie, how frequently it will be watched per day (`predictPopularity: Movie -> Int`). 
+Consider you are in the early days of video streaming and are building a Netflix-like streaming business with a massive catalog of movies. Currently, the service has one million users and about 27.000 movies. In this assignment, the goal is to predict the expected popularity of movies to plan movie acquisitions and royalty payments. That is, you want to predict for a given movie, how frequently it will be watched per day (`predictPopularity: Movie -> Int`). 
 
 Note, that the scenario is intended to predict the popularity of movies that are not yet available for streaming yet. Therefore, although you have access to watching behavior for all movies, you should not use past watching numbers of a movie when predicting that movie's future popularity. You can of course use the popularity of other, possibly similar, movies on the platform.
 
-**Provided data:** We provide an event stream (Apache Kafka) of a streaming service site that records server logs, which include information about which user watched which video and ratings about those movies. In addition, we provide read-only access to an API to query information about users and movies. In addition, you should collect data at least from one external data source not provided by the course staff; for example, ids for [IMDB](https://www.imdb.com/) and [TMDB](https://www.themoviedb.org/) are provided for each movie.
+**Provided data:** **THIS NEEDS TO BE _MUCH_ MORE EXPLICT** We provide an event stream (Apache Kafka) of the fictional streaming service that records server logs, which include information about which user watched which video and ratings about those movies. In addition, we provide read-only access to an API to query information about users and movies. 
+The log has entries in the following format:
+* `<time>,<userid>,recommendation request <server>, status <200 for success>, result: <recommendations>, <responsetime>` – the user considers watching a movie and a list of recommendations is requested
+* `<time>,<userid>,GET /data/m/<movieid>/<minute>.mpg` – the user watches a movie; the movie is split into 1-minute long mpg files that are requested by the user as long as they are watching the movie
+* `<time>,<userid>,GET /rate/<movieid>=<rating>` – the user rates a movie with 1 to 5 stars
+
+
+In addition, you should collect data at least from one external data source not provided by the course staff; for example, ids for [IMDB](https://www.imdb.com/) and [TMDB](https://www.themoviedb.org/) are provided for each movie.
+
+**Using Kafka** So you are able to begin using the data much faster, the Lubuntu VM has been set up to  
+
 
 You do not need to use all provided data, but should use most of it and not down-sample too much for the final model. Plan for the fact that data gathering may take some time; the provided raw data is fairly large and you may need some time to download and process it (if Internet bandwidth is a problem, consider performing some preprocessing on the [public Linux](https://www.cmu.edu/computing/services/endpoint/software/how-to/timeshare-unix.html) or [Virtual Andrew](https://www.cmu.edu/computing/services/endpoint/software/virtual-andrew.html) machines within the CMU network).
 

@@ -61,14 +61,6 @@ The report should answer the following questions in clearly labeled sections of 
 
 On page limits: Figures and tables do not count toward the page limit. All page limits are soft limits that should usually be obeyed but can be exceeded if there are specific reasons (e.g., unusual decisions that need more space for explanations).
 
-## Optional Bonus: Implementing Random Forest Learning
-
-Implementing your own learning technique can be useful to understand how learning techniques really work. We will provide **50 bonus points** if you implement your own **random forest** learning technique and compare it against results achieved with off-the-shelf implementations (e.g., in scikit learn) for the learning problem of this assignment. You may complete this part also **at any point later in the semester** up to the day of the last lecture.
-
-You may use libraries for some parts of your implementation (e.g., Pandas for data frames) and look at textbooks and examples, but the actual learning code should be entirely your own implementation.
-
-To complete this bonus part, commit a reasonably documented implementation to your GitHub repository and include an entry point that applies your learner to the dataset and reports results (notebook or command-line script). Either include an extra page in your report with the original submission or send an email with a pointer to the course staff.
-
 ## Grading
 
 We expect a reasonable job for data cleaning, feature extraction, learning, and model evaluation that demonstrates a basic understanding of all involved tasks. We expect readable code for all involved steps (with documentation where necessary). We do NOT have any expectations with regard to model accuracy of the resulting model; you may receive full credit even with models that do not perform well.

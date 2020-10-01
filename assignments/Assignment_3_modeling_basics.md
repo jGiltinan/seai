@@ -13,7 +13,7 @@ Learning goals:
 
 ## Tasks
 
-Consider you are in the early days of video streaming and are building a Netflix-like streaming business with a massive catalog of movies. Currently, the service has one million users and about 27,000 movies. In this assignment, the goal is to predict the expected popularity of movies to plan movie acquisitions and royalty payments. That is, you want to predict for a given movie, how frequently it will be watched per day (`predictPopularity: Movie -> Int`). 
+Consider you are in the early days of video streaming and are building a Netflix-like streaming business with a massive catalog of movies. Currently, the service has one million users and about 27,000 movies. In this assignment, the goal is to predict the expected popularity of movies to plan movie acquisitions and royalty payments. That is, you want to predict for a given movie, how frequently it will be watched per day (`predictPopularity: Movie -> Float`). 
 
 Note, that the scenario is intended to predict the popularity of movies that are not yet available for streaming yet. Therefore, although you have access to watching behavior for all movies, you should not use past watching numbers of a movie when predicting that movie's future popularity. You can of course use the popularity of other, possibly similar, movies on the platform.
 
